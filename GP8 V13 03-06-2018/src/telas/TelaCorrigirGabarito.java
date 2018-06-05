@@ -25,23 +25,23 @@ import util.LetraMaiuscula;
  * @author ALCIOMAR
  */
 public class TelaCorrigirGabarito extends javax.swing.JDialog {
-
+    
     CorrigirGabarito corrigir = new CorrigirGabarito();
     CorrigirDAO corrigirDAO = new CorrigirDAO();
     Gabarito gabarito = new Gabarito();
     GabaritoDAO dao = new GabaritoDAO();
     Aluno aluno = new Aluno();
     AlunoDAO alunoDAO = new AlunoDAO();
-
+    
     Gson json = new Gson();
-
+    
     public TelaCorrigirGabarito(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
         Excluir.setEnabled(false);
-
+        
     }
-
+    
     public void limparCampos() {
         util.Util.limparCamposJDialog(this);
         gabarito = new Gabarito();
@@ -49,57 +49,59 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
         aluno = new Aluno();
         Excluir.setEnabled(false);
     }
-
+    
     public void preencherCampos() {
-        gabarito.setRespostaJSON(gabarito.getRespostaJSON().replace("\"", "").replace("[", "").replace("]", ""));
-        gabarito.setResposta(gabarito.getRespostaJSON().split(","));
-        tfNomeAluno.setText(gabarito.getNomeGabarito());
-        qt01.setText(gabarito.getResposta()[0]);
-        qt02.setText(gabarito.getResposta()[1]);
-        qt03.setText(gabarito.getResposta()[2]);
-        qt04.setText(gabarito.getResposta()[3]);
-        qt05.setText(gabarito.getResposta()[4]);
-        qt06.setText(gabarito.getResposta()[5]);
-        qt08.setText(gabarito.getResposta()[6]);
-        qt07.setText(gabarito.getResposta()[7]);
-        qt09.setText(gabarito.getResposta()[8]);
-        qt10.setText(gabarito.getResposta()[9]);
-        qt11.setText(gabarito.getResposta()[10]);
-        qt12.setText(gabarito.getResposta()[11]);
-        qt13.setText(gabarito.getResposta()[12]);
-        qt14.setText(gabarito.getResposta()[13]);
-        qt15.setText(gabarito.getResposta()[14]);
-        qt16.setText(gabarito.getResposta()[15]);
-        qt17.setText(gabarito.getResposta()[16]);
-        qt18.setText(gabarito.getResposta()[17]);
-        qt19.setText(gabarito.getResposta()[18]);
-        qt20.setText(gabarito.getResposta()[19]);
-        qt21.setText(gabarito.getResposta()[20]);
-        qt22.setText(gabarito.getResposta()[21]);
-        qt23.setText(gabarito.getResposta()[22]);
-        qt24.setText(gabarito.getResposta()[23]);
-        qt25.setText(gabarito.getResposta()[24]);
-        qt26.setText(gabarito.getResposta()[25]);
-        qt27.setText(gabarito.getResposta()[26]);
-        qt28.setText(gabarito.getResposta()[27]);
-        qt29.setText(gabarito.getResposta()[28]);
-        qt30.setText(gabarito.getResposta()[29]);
-        qt31.setText(gabarito.getResposta()[30]);
-        qt32.setText(gabarito.getResposta()[31]);
-        qt33.setText(gabarito.getResposta()[32]);
-        qt34.setText(gabarito.getResposta()[33]);
-        qt35.setText(gabarito.getResposta()[34]);
-        qt36.setText(gabarito.getResposta()[35]);
-        qt37.setText(gabarito.getResposta()[36]);
-        qt38.setText(gabarito.getResposta()[37]);
-        qt39.setText(gabarito.getResposta()[38]);
-        qt40.setText(gabarito.getResposta()[39]);
-        qt41.setText(gabarito.getResposta()[40]);
-        qt42.setText(gabarito.getResposta()[41]);
-        qt43.setText(gabarito.getResposta()[42]);
-        qt44.setText(gabarito.getResposta()[43]);
-        qt45.setText(gabarito.getResposta()[44]);
-
+        corrigir.setRespostaJSON(corrigir.getRespostaJSON().replace("\"", "").replace("[", "").replace("]", ""));
+        corrigir.setResposta(corrigir.getRespostaJSON().split(","));
+        tfProcessoSeletivo.setText(corrigir.getGabarito().getNomeGabarito());
+        NotaDaRedacao.setText(String.valueOf(corrigir.getQtdAcertosRedacao()));
+        tfNomeAluno.setText(corrigir.getAluno().getNome());
+        qt01.setText(corrigir.getResposta()[0]);
+        qt02.setText(corrigir.getResposta()[1]);
+        qt03.setText(corrigir.getResposta()[2]);
+        qt04.setText(corrigir.getResposta()[3]);
+        qt05.setText(corrigir.getResposta()[4]);
+        qt06.setText(corrigir.getResposta()[5]);
+        qt08.setText(corrigir.getResposta()[6]);
+        qt07.setText(corrigir.getResposta()[7]);
+        qt09.setText(corrigir.getResposta()[8]);
+        qt10.setText(corrigir.getResposta()[9]);
+        qt11.setText(corrigir.getResposta()[10]);
+        qt12.setText(corrigir.getResposta()[11]);
+        qt13.setText(corrigir.getResposta()[12]);
+        qt14.setText(corrigir.getResposta()[13]);
+        qt15.setText(corrigir.getResposta()[14]);
+        qt16.setText(corrigir.getResposta()[15]);
+        qt17.setText(corrigir.getResposta()[16]);
+        qt18.setText(corrigir.getResposta()[17]);
+        qt19.setText(corrigir.getResposta()[18]);
+        qt20.setText(corrigir.getResposta()[19]);
+        qt21.setText(corrigir.getResposta()[20]);
+        qt22.setText(corrigir.getResposta()[21]);
+        qt23.setText(corrigir.getResposta()[22]);
+        qt24.setText(corrigir.getResposta()[23]);
+        qt25.setText(corrigir.getResposta()[24]);
+        qt26.setText(corrigir.getResposta()[25]);
+        qt27.setText(corrigir.getResposta()[26]);
+        qt28.setText(corrigir.getResposta()[27]);
+        qt29.setText(corrigir.getResposta()[28]);
+        qt30.setText(corrigir.getResposta()[29]);
+        qt31.setText(corrigir.getResposta()[30]);
+        qt32.setText(corrigir.getResposta()[31]);
+        qt33.setText(corrigir.getResposta()[32]);
+        qt34.setText(corrigir.getResposta()[33]);
+        qt35.setText(corrigir.getResposta()[34]);
+        qt36.setText(corrigir.getResposta()[35]);
+        qt37.setText(corrigir.getResposta()[36]);
+        qt38.setText(corrigir.getResposta()[37]);
+        qt39.setText(corrigir.getResposta()[38]);
+        qt40.setText(corrigir.getResposta()[39]);
+        qt41.setText(corrigir.getResposta()[40]);
+        qt42.setText(corrigir.getResposta()[41]);
+        qt43.setText(corrigir.getResposta()[42]);
+        qt44.setText(corrigir.getResposta()[43]);
+        qt45.setText(corrigir.getResposta()[44]);
+        
     }
 
     /**
@@ -212,7 +214,7 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
         jLabel48 = new javax.swing.JLabel();
         PesquisarAluno = new javax.swing.JButton();
         Excluir = new javax.swing.JButton();
-        tfNomeAluno1 = new javax.swing.JTextField();
+        tfProcessoSeletivo = new javax.swing.JTextField();
         jLabel47 = new javax.swing.JLabel();
         PesquisarProcessoSeletivo = new javax.swing.JButton();
         PesquisarGabarito = new javax.swing.JButton();
@@ -724,16 +726,16 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
 
-        tfNomeAluno1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        tfNomeAluno1.setEnabled(false);
-        tfNomeAluno1.addActionListener(new java.awt.event.ActionListener() {
+        tfProcessoSeletivo.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        tfProcessoSeletivo.setEnabled(false);
+        tfProcessoSeletivo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tfNomeAluno1ActionPerformed(evt);
+                tfProcessoSeletivoActionPerformed(evt);
             }
         });
-        tfNomeAluno1.addKeyListener(new java.awt.event.KeyAdapter() {
+        tfProcessoSeletivo.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
-                tfNomeAluno1KeyTyped(evt);
+                tfProcessoSeletivoKeyTyped(evt);
             }
         });
 
@@ -774,7 +776,7 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
                                         .addComponent(PesquisarAluno, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addComponent(jLabel47, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(tfNomeAluno1, javax.swing.GroupLayout.PREFERRED_SIZE, 274, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(tfProcessoSeletivo, javax.swing.GroupLayout.PREFERRED_SIZE, 274, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(PesquisarProcessoSeletivo, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -1120,7 +1122,7 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
                         .addComponent(jLabel47, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(tfNomeAluno1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tfProcessoSeletivo, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(PesquisarProcessoSeletivo))))
                 .addContainerGap())
         );
@@ -1181,7 +1183,7 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
     }//GEN-LAST:event_qt01KeyReleased
 
     private void qt01KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_qt01KeyTyped
-
+        
         int ascii = evt.getKeyChar();
         qt01.setDocument(new LetraMaiuscula());
         if (!(ascii >= 65 && ascii <= 69) && !(ascii >= 97 && ascii <= 101) && !(ascii == evt.VK_BACK_SPACE)) {
@@ -1744,9 +1746,9 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
     }//GEN-LAST:event_qt44KeyTyped
 
     private void SalvarGabaritoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SalvarGabaritoActionPerformed
-
+        
         preencherArray();
-
+        
         corrigir.setRespostaJSON(json.toJson(corrigir.getResposta()));
         corrigir.setQtdAcertosRedacao(Integer.parseInt(NotaDaRedacao.getText()));
         if (corrigir.getId() == 0) {
@@ -1761,12 +1763,12 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
     }//GEN-LAST:event_SalvarGabaritoActionPerformed
 
     private void LimparCamposActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LimparCamposActionPerformed
-
+        
         limparCampos();
     }//GEN-LAST:event_LimparCamposActionPerformed
 
     private void VoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VoltarActionPerformed
-
+        
         EscolhaDeAcao escolhaDeAcao = new EscolhaDeAcao();
         escolhaDeAcao.setVisible(true);
         dispose();
@@ -1781,7 +1783,7 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
     }//GEN-LAST:event_tfNomeAlunoKeyTyped
 
     private void PesquisarAlunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PesquisarAlunoActionPerformed
-
+        
         List<Aluno> lista;
         lista = (alunoDAO.listarAluno());
         AlunoTableModel itm = new AlunoTableModel(lista);
@@ -1791,7 +1793,7 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             tfNomeAluno.setText(aluno.getNome());
             corrigir.setAluno(aluno);
             Excluir.setEnabled(true);
-
+            
         }
     }//GEN-LAST:event_PesquisarAlunoActionPerformed
 
@@ -1801,13 +1803,13 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
         limparCampos();
     }//GEN-LAST:event_ExcluirActionPerformed
 
-    private void tfNomeAluno1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfNomeAluno1ActionPerformed
+    private void tfProcessoSeletivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfProcessoSeletivoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_tfNomeAluno1ActionPerformed
+    }//GEN-LAST:event_tfProcessoSeletivoActionPerformed
 
-    private void tfNomeAluno1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tfNomeAluno1KeyTyped
+    private void tfProcessoSeletivoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tfProcessoSeletivoKeyTyped
         // TODO add your handling code here:
-    }//GEN-LAST:event_tfNomeAluno1KeyTyped
+    }//GEN-LAST:event_tfProcessoSeletivoKeyTyped
 
     private void PesquisarProcessoSeletivoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PesquisarProcessoSeletivoActionPerformed
         List<Gabarito> lista;
@@ -1816,11 +1818,11 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
         Object objetoRetorno = PesquisaGenerica.exibeTela(itm, "Gabarito");
         if (objetoRetorno != null) {
             gabarito = dao.pesquisarGabarito((Integer) objetoRetorno);
-            tfNomeAluno1.setText(gabarito.getNomeGabarito());
+            tfProcessoSeletivo.setText(gabarito.getNomeGabarito());
             corrigir.setGabarito(gabarito);
-
+            
         }
-
+        
 
     }//GEN-LAST:event_PesquisarProcessoSeletivoActionPerformed
 
@@ -1833,21 +1835,21 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             corrigir = corrigirDAO.pesquisarCorrigirGabarito((Integer) objetoRetorno);
             preencherCampos();
             Excluir.setEnabled(true);
-
+            
         }
 
     }//GEN-LAST:event_PesquisarGabaritoActionPerformed
-
+    
     public void verificarCampos(int posicao, JTextField tf) {
-
+        
         if (tf.getText().isEmpty()) {
             corrigir.getResposta()[posicao] = "nula";
         } else {
             corrigir.getResposta()[posicao] = tf.getText().toUpperCase();
         }
-
+        
     }
-
+    
     public void preencherArray() {
         verificarCampos(0, qt01);
         verificarCampos(1, qt02);
@@ -1894,7 +1896,7 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
         verificarCampos(42, qt43);
         verificarCampos(43, qt44);
         verificarCampos(44, qt45);
-
+        
     }
 
     /**
@@ -2050,6 +2052,6 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
     private javax.swing.JTextField qt44;
     private javax.swing.JTextField qt45;
     private javax.swing.JTextField tfNomeAluno;
-    private javax.swing.JTextField tfNomeAluno1;
+    private javax.swing.JTextField tfProcessoSeletivo;
     // End of variables declaration//GEN-END:variables
 }

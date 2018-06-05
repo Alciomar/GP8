@@ -30,7 +30,8 @@ public class CorrigirGabaritoTableModel extends AbstractTableModel {
             case 0:
                 return corrigir1.getId();
             case 1:
-                return corrigir1.getId();
+                return corrigir1.getAluno().getNome();
+
         }
         return null;
     }
