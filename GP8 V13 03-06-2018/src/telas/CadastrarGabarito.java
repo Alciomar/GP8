@@ -28,14 +28,14 @@ public class CadastrarGabarito extends javax.swing.JDialog {
     public CadastrarGabarito(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
-        Excluir.setEnabled(false);
+        Excluir2.setEnabled(false);
 
     }
 
     public void limparCampos() {
         util.Util.limparCamposJDialog(this);
         gabarito = new Gabarito();
-        Excluir.setEnabled(false);
+        Excluir2.setEnabled(false);
     }
 
     public void preencherCampos() {
@@ -196,7 +196,6 @@ public class CadastrarGabarito extends javax.swing.JDialog {
         LimparCampos = new javax.swing.JButton();
         Voltar = new javax.swing.JButton();
         jLabel46 = new javax.swing.JLabel();
-        Excluir = new javax.swing.JButton();
         Excluir2 = new javax.swing.JButton();
         Pesquisar = new javax.swing.JButton();
         tfNomeGabarito = new javax.swing.JTextField();
@@ -868,15 +867,6 @@ public class CadastrarGabarito extends javax.swing.JDialog {
         jLabel46.setText("NOME DO GABARITO");
         getContentPane().add(jLabel46);
         jLabel46.setBounds(230, 520, 160, 26);
-
-        Excluir.setText("EXCLUIR");
-        Excluir.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ExcluirActionPerformed(evt);
-            }
-        });
-        getContentPane().add(Excluir);
-        Excluir.setBounds(700, 620, 90, 23);
 
         Excluir2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/EXCLUIR.png"))); // NOI18N
         Excluir2.addActionListener(new java.awt.event.ActionListener() {
@@ -1584,7 +1574,7 @@ public class CadastrarGabarito extends javax.swing.JDialog {
         if (objetoRetorno != null) {
             gabarito = dao.pesquisarGabarito((Integer) objetoRetorno);
             preencherCampos();
-            Excluir.setEnabled(true);
+            Excluir2.setEnabled(true);
 
         }
     }//GEN-LAST:event_PesquisarActionPerformed
@@ -1594,12 +1584,6 @@ public class CadastrarGabarito extends javax.swing.JDialog {
         JOptionPane.showMessageDialog(null, "Gabarito excluído com sucesso!");
         limparCampos();
     }//GEN-LAST:event_Excluir2ActionPerformed
-
-    private void ExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExcluirActionPerformed
-        dao.excluirUsuario(gabarito);
-        JOptionPane.showMessageDialog(null, "Gabarito excluído com sucesso!");
-        limparCampos();
-    }//GEN-LAST:event_ExcluirActionPerformed
 
     public void verificarCampos(int posicao, JTextField tf) {
 
@@ -1704,7 +1688,6 @@ public class CadastrarGabarito extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Excluir;
     private javax.swing.JButton Excluir2;
     private javax.swing.JButton LimparCampos;
     private javax.swing.JButton Pesquisar;
