@@ -8,7 +8,7 @@
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
         <property name="connection.url">jdbc:mysql://localhost/academicofvs</property>
         <property name="connection.username">root</property>
-        <property name="connection.password">190406ld</property>
+        <property name="connection.password">monte0804</property>
         <property name="show_sql">true</property>
         <property name="format_sql">true</property>
         <property name="generate_statistics">true</property>

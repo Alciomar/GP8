@@ -8,8 +8,22 @@ package telas;
 import Gabarito.Gabarito;
 import Gabarito.GabaritoDAO;
 import Gabarito.GabaritoTableModel;
+import aluno.Aluno;
+import aluno.AlunoDAO;
+import com.itextpdf.text.Document;
+import com.itextpdf.text.DocumentException;
+import com.itextpdf.text.Element;
+import com.itextpdf.text.Paragraph;
+import com.itextpdf.text.pdf.PdfPCell;
+import com.itextpdf.text.pdf.PdfPTable;
+import com.itextpdf.text.pdf.PdfWriter;
 import corrigirGabarito.CorrigirDAO;
 import corrigirGabarito.CorrigirGabarito;
+import java.awt.Desktop;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.JOptionPane;
@@ -24,6 +38,8 @@ public class CalcularResultado extends javax.swing.JDialog {
     CorrigirDAO corrigirDAO = new CorrigirDAO();
     Gabarito gabarito = new Gabarito();
     GabaritoDAO dao = new GabaritoDAO();
+    Aluno aluno = new Aluno();
+    AlunoDAO alunoDAO = new AlunoDAO();
 
     /**
      * Creates new form CalcularResultado
@@ -145,6 +161,7 @@ public class CalcularResultado extends javax.swing.JDialog {
         jLabel47 = new javax.swing.JLabel();
         tfNomeAluno1 = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
+        GerarRelatorio = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -178,6 +195,13 @@ public class CalcularResultado extends javax.swing.JDialog {
             }
         });
 
+        GerarRelatorio.setText("GERAR RELATORIO");
+        GerarRelatorio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                GerarRelatorioActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -188,15 +212,17 @@ public class CalcularResultado extends javax.swing.JDialog {
                         .addGap(81, 81, 81)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
+                                .addGap(97, 97, 97)
+                                .addComponent(jLabel47, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
                                 .addComponent(tfNomeAluno1, javax.swing.GroupLayout.PREFERRED_SIZE, 274, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(Pesquisar1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(97, 97, 97)
-                                .addComponent(jLabel47, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(Pesquisar1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(164, 164, 164)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(59, 59, 59)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(35, 35, 35)
+                        .addComponent(GerarRelatorio, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(60, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -208,9 +234,11 @@ public class CalcularResultado extends javax.swing.JDialog {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tfNomeAluno1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Pesquisar1))
-                .addGap(64, 64, 64)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(107, 107, 107))
+                .addGap(62, 62, 62)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(GerarRelatorio, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(109, 109, 109))
         );
 
         pack();
@@ -246,6 +274,54 @@ public class CalcularResultado extends javax.swing.JDialog {
             JOptionPane.showMessageDialog(this, "Selecione o processo seletivo!");
         }
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void GerarRelatorioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GerarRelatorioActionPerformed
+        Document document = new Document();
+        List<Aluno> aluno1 = alunoDAO.listarAluno();
+
+        try {
+            PdfWriter.getInstance(document, new FileOutputStream("Documento.pdf"));
+
+            document.open();
+
+            Paragraph paragrafo = new Paragraph();
+            paragrafo.setAlignment(1);
+            document.add(paragrafo);
+            paragrafo = new Paragraph("");
+            document.add(paragrafo);
+
+            PdfPTable tabela = new PdfPTable(2);
+
+            PdfPCell cel1 = new PdfPCell(new Paragraph("ID"));
+            PdfPCell cel2 = new PdfPCell(new Paragraph("NOME"));
+
+            tabela.addCell(cel1);
+            tabela.addCell(cel2);
+
+            for (Aluno aluno : aluno1) {
+                cel1 = new PdfPCell(new Paragraph(aluno.getId() + ""));
+                cel2 = new PdfPCell(new Paragraph(aluno.getNome()));
+
+                tabela.addCell(cel1);
+                tabela.addCell(cel2);
+
+            }
+            document.add(tabela);
+
+        } catch (FileNotFoundException | DocumentException ex) {
+            System.out.println("Erro: " + ex);
+        } finally {
+            document.close();
+        }
+
+        try {
+            Desktop.getDesktop().open(new File("Documento.pdf"));
+        } catch (IOException ex) {
+            System.out.println("Erro: " + ex);
+        }
+
+
+    }//GEN-LAST:event_GerarRelatorioActionPerformed
 
     /**
      * @param args the command line arguments
@@ -290,6 +366,7 @@ public class CalcularResultado extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton GerarRelatorio;
     private javax.swing.JButton Pesquisar1;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel47;

@@ -194,7 +194,6 @@ public class CadastrarGabarito extends javax.swing.JDialog {
         qt44 = new javax.swing.JTextField();
         SalvarGabarito = new javax.swing.JButton();
         LimparCampos = new javax.swing.JButton();
-        Voltar = new javax.swing.JButton();
         jLabel46 = new javax.swing.JLabel();
         Excluir2 = new javax.swing.JButton();
         Pesquisar = new javax.swing.JButton();
@@ -852,16 +851,6 @@ public class CadastrarGabarito extends javax.swing.JDialog {
         });
         getContentPane().add(LimparCampos);
         LimparCampos.setBounds(310, 600, 100, 50);
-
-        Voltar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/voltar.png"))); // NOI18N
-        Voltar.setToolTipText("");
-        Voltar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                VoltarActionPerformed(evt);
-            }
-        });
-        getContentPane().add(Voltar);
-        Voltar.setBounds(480, 450, 100, 50);
 
         jLabel46.setFont(new java.awt.Font("Arial Black", 1, 11)); // NOI18N
         jLabel46.setText("NOME DO GABARITO");
@@ -1551,13 +1540,6 @@ public class CadastrarGabarito extends javax.swing.JDialog {
         limparCampos();
     }//GEN-LAST:event_LimparCamposActionPerformed
 
-    private void VoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VoltarActionPerformed
-
-        EscolhaDeAcao escolhaDeAcao = new EscolhaDeAcao();
-        escolhaDeAcao.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_VoltarActionPerformed
-
     private void tfNomeGabaritoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfNomeGabaritoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_tfNomeGabaritoActionPerformed
@@ -1692,7 +1674,6 @@ public class CadastrarGabarito extends javax.swing.JDialog {
     private javax.swing.JButton LimparCampos;
     private javax.swing.JButton Pesquisar;
     private javax.swing.JButton SalvarGabarito;
-    private javax.swing.JButton Voltar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

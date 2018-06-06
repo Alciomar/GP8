@@ -347,8 +347,9 @@ public class CadastrarAluno extends javax.swing.JDialog {
         if (listaAlunos != null) {
             for (Aluno alunoIteracao : listaAlunos) {
                 alunoDAO.salvarAluno(alunoIteracao);
-                JOptionPane.showMessageDialog(null, "Dandos Inseridos com sucesso!");
             }
+            JOptionPane.showMessageDialog(null, "Dandos Inseridos com sucesso!");
+            limparCampos();
         } else {
             JOptionPane.showMessageDialog(null, "Dados nao Inseridos!");
 
