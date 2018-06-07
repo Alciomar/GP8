@@ -156,6 +156,7 @@ public class CadastrarAluno extends javax.swing.JDialog {
         jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(622, 348));
         getContentPane().setLayout(null);
 
         CarregarArquivo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/CARREGARARQUIVO.png"))); // NOI18N
@@ -274,7 +275,7 @@ public class CadastrarAluno extends javax.swing.JDialog {
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/tela cadastrar aluno.png"))); // NOI18N
         getContentPane().add(jLabel7);
-        jLabel7.setBounds(0, 0, 630, 350);
+        jLabel7.setBounds(0, 0, 620, 350);
 
         pack();
         setLocationRelativeTo(null);

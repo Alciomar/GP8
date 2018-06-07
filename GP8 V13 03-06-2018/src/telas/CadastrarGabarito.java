@@ -854,7 +854,7 @@ public class CadastrarGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(LimparCampos);
-        LimparCampos.setBounds(310, 600, 100, 50);
+        LimparCampos.setBounds(330, 600, 100, 50);
 
         jLabel46.setFont(new java.awt.Font("Arial Black", 1, 11)); // NOI18N
         jLabel46.setText("NOME DO GABARITO");
@@ -870,7 +870,7 @@ public class CadastrarGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(Excluir2);
-        Excluir2.setBounds(690, 600, 100, 50);
+        Excluir2.setBounds(730, 600, 100, 50);
 
         Pesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/PESQUISAR2.png"))); // NOI18N
         Pesquisar.setBorderPainted(false);
@@ -881,7 +881,7 @@ public class CadastrarGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(Pesquisar);
-        Pesquisar.setBounds(500, 600, 100, 50);
+        Pesquisar.setBounds(540, 600, 100, 50);
 
         tfNomeGabarito.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         tfNomeGabarito.addActionListener(new java.awt.event.ActionListener() {

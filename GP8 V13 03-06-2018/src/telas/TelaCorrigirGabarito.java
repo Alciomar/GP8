@@ -935,7 +935,7 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(Excluir);
-        Excluir.setBounds(750, 660, 100, 50);
+        Excluir.setBounds(730, 660, 100, 50);
 
         tfProcessoSeletivo.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         tfProcessoSeletivo.setEnabled(false);
@@ -977,7 +977,7 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(PesquisarGabarito);
-        PesquisarGabarito.setBounds(580, 660, 100, 50);
+        PesquisarGabarito.setBounds(620, 660, 100, 50);
 
         jLabel49.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel49.setText("NOTA DA REDAÇÃO");
