@@ -857,6 +857,8 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
         qt44.setBounds(290, 490, 44, 33);
 
         SalvarGabarito.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/SALVAR_1.png"))); // NOI18N
+        SalvarGabarito.setBorderPainted(false);
+        SalvarGabarito.setContentAreaFilled(false);
         SalvarGabarito.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SalvarGabaritoActionPerformed(evt);
@@ -866,6 +868,8 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
         SalvarGabarito.setBounds(790, 590, 100, 50);
 
         LimparCampos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/limpar.png"))); // NOI18N
+        LimparCampos.setBorderPainted(false);
+        LimparCampos.setContentAreaFilled(false);
         LimparCampos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 LimparCamposActionPerformed(evt);
@@ -876,6 +880,8 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
 
         Voltar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/voltar.png"))); // NOI18N
         Voltar.setToolTipText("");
+        Voltar.setBorderPainted(false);
+        Voltar.setContentAreaFilled(false);
         Voltar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 VoltarActionPerformed(evt);
@@ -910,6 +916,8 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
         jLabel48.setBounds(330, 20, 400, 44);
 
         PesquisarAluno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/PESQUISAR.png"))); // NOI18N
+        PesquisarAluno.setBorderPainted(false);
+        PesquisarAluno.setContentAreaFilled(false);
         PesquisarAluno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 PesquisarAlunoActionPerformed(evt);
@@ -919,6 +927,8 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
         PesquisarAluno.setBounds(410, 590, 70, 39);
 
         Excluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/EXCLUIR.png"))); // NOI18N
+        Excluir.setBorderPainted(false);
+        Excluir.setContentAreaFilled(false);
         Excluir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ExcluirActionPerformed(evt);
@@ -948,6 +958,8 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
         jLabel47.setBounds(130, 630, 160, 26);
 
         PesquisarProcessoSeletivo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/PESQUISAR.png"))); // NOI18N
+        PesquisarProcessoSeletivo.setBorderPainted(false);
+        PesquisarProcessoSeletivo.setContentAreaFilled(false);
         PesquisarProcessoSeletivo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 PesquisarProcessoSeletivoActionPerformed(evt);
@@ -957,6 +969,8 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
         PesquisarProcessoSeletivo.setBounds(410, 670, 70, 39);
 
         PesquisarGabarito.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/PESQUISAR2.png"))); // NOI18N
+        PesquisarGabarito.setBorderPainted(false);
+        PesquisarGabarito.setContentAreaFilled(false);
         PesquisarGabarito.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 PesquisarGabaritoActionPerformed(evt);

@@ -209,7 +209,7 @@ public class CadastrarGabarito extends javax.swing.JDialog {
         jLabel15.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel15.setText("15º");
         getContentPane().add(jLabel15);
-        jLabel15.setBounds(370, 170, 34, 33);
+        jLabel15.setBounds(370, 200, 34, 33);
 
         qt15.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -217,7 +217,7 @@ public class CadastrarGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt15);
-        qt15.setBounds(410, 170, 44, 33);
+        qt15.setBounds(410, 200, 44, 33);
 
         qt18.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -225,12 +225,12 @@ public class CadastrarGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt18);
-        qt18.setBounds(810, 170, 44, 33);
+        qt18.setBounds(810, 200, 44, 33);
 
         jLabel24.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel24.setText("17º");
         getContentPane().add(jLabel24);
-        jLabel24.setBounds(630, 170, 34, 33);
+        jLabel24.setBounds(630, 200, 34, 33);
 
         qt17.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -238,13 +238,13 @@ public class CadastrarGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt17);
-        qt17.setBounds(670, 170, 44, 33);
+        qt17.setBounds(670, 200, 44, 33);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("1º");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(110, 60, 34, 33);
+        jLabel1.setBounds(110, 90, 34, 33);
 
         qt01.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
@@ -263,13 +263,13 @@ public class CadastrarGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt01);
-        qt01.setBounds(150, 60, 44, 33);
+        qt01.setBounds(150, 90, 44, 33);
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("4º");
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(510, 60, 34, 33);
+        jLabel6.setBounds(510, 90, 34, 33);
 
         qt04.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -277,13 +277,13 @@ public class CadastrarGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt04);
-        qt04.setBounds(550, 60, 44, 33);
+        qt04.setBounds(550, 90, 44, 33);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("7º");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(110, 120, 34, 33);
+        jLabel2.setBounds(110, 150, 34, 33);
 
         qt07.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -291,13 +291,13 @@ public class CadastrarGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt07);
-        qt07.setBounds(150, 120, 44, 33);
+        qt07.setBounds(150, 150, 44, 33);
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel9.setText("10º");
         getContentPane().add(jLabel9);
-        jLabel9.setBounds(510, 120, 34, 33);
+        jLabel9.setBounds(510, 150, 34, 33);
 
         qt10.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -305,13 +305,13 @@ public class CadastrarGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt10);
-        qt10.setBounds(550, 120, 44, 33);
+        qt10.setBounds(550, 150, 44, 33);
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("2º");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(230, 60, 34, 33);
+        jLabel4.setBounds(230, 90, 34, 33);
 
         qt02.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -324,13 +324,13 @@ public class CadastrarGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt02);
-        qt02.setBounds(270, 60, 44, 33);
+        qt02.setBounds(270, 90, 44, 33);
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel7.setText("5º");
         getContentPane().add(jLabel7);
-        jLabel7.setBounds(630, 60, 34, 33);
+        jLabel7.setBounds(630, 90, 34, 33);
 
         qt05.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -338,13 +338,13 @@ public class CadastrarGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt05);
-        qt05.setBounds(670, 60, 44, 33);
+        qt05.setBounds(670, 90, 44, 33);
 
         jLabel12.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel12.setText("8º");
         getContentPane().add(jLabel12);
-        jLabel12.setBounds(230, 120, 34, 33);
+        jLabel12.setBounds(230, 150, 34, 33);
 
         qt08.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -352,13 +352,13 @@ public class CadastrarGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt08);
-        qt08.setBounds(270, 120, 44, 33);
+        qt08.setBounds(270, 150, 44, 33);
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel10.setText("11º");
         getContentPane().add(jLabel10);
-        jLabel10.setBounds(630, 120, 34, 33);
+        jLabel10.setBounds(630, 150, 34, 33);
 
         qt11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -371,12 +371,12 @@ public class CadastrarGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt11);
-        qt11.setBounds(670, 120, 44, 33);
+        qt11.setBounds(670, 150, 44, 33);
 
         jLabel14.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel14.setText("13º");
         getContentPane().add(jLabel14);
-        jLabel14.setBounds(110, 170, 34, 33);
+        jLabel14.setBounds(110, 200, 34, 33);
 
         qt13.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -384,13 +384,13 @@ public class CadastrarGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt13);
-        qt13.setBounds(150, 170, 44, 33);
+        qt13.setBounds(150, 200, 44, 33);
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("3º");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(370, 60, 34, 33);
+        jLabel3.setBounds(370, 90, 34, 33);
 
         qt03.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -398,17 +398,17 @@ public class CadastrarGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt03);
-        qt03.setBounds(410, 60, 44, 33);
+        qt03.setBounds(410, 90, 44, 33);
 
         jLabel13.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel13.setText("14º");
         getContentPane().add(jLabel13);
-        jLabel13.setBounds(230, 170, 34, 33);
+        jLabel13.setBounds(230, 200, 34, 33);
 
         jLabel23.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel23.setText("18º");
         getContentPane().add(jLabel23);
-        jLabel23.setBounds(770, 170, 34, 33);
+        jLabel23.setBounds(770, 200, 34, 33);
 
         qt14.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -416,12 +416,12 @@ public class CadastrarGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt14);
-        qt14.setBounds(270, 170, 44, 33);
+        qt14.setBounds(270, 200, 44, 33);
 
         jLabel30.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel30.setText("16º");
         getContentPane().add(jLabel30);
-        jLabel30.setBounds(510, 170, 34, 33);
+        jLabel30.setBounds(510, 200, 34, 33);
 
         qt16.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -429,7 +429,7 @@ public class CadastrarGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt16);
-        qt16.setBounds(550, 170, 44, 33);
+        qt16.setBounds(550, 200, 44, 33);
 
         qt12.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -437,13 +437,13 @@ public class CadastrarGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt12);
-        qt12.setBounds(810, 120, 44, 33);
+        qt12.setBounds(810, 150, 44, 33);
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel8.setText("12º");
         getContentPane().add(jLabel8);
-        jLabel8.setBounds(770, 120, 34, 33);
+        jLabel8.setBounds(770, 150, 34, 33);
 
         qt06.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -451,7 +451,7 @@ public class CadastrarGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt06);
-        qt06.setBounds(810, 60, 44, 33);
+        qt06.setBounds(810, 90, 44, 33);
 
         qt09.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -459,24 +459,24 @@ public class CadastrarGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt09);
-        qt09.setBounds(410, 120, 44, 33);
+        qt09.setBounds(410, 150, 44, 33);
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("6º");
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(770, 60, 34, 33);
+        jLabel5.setBounds(770, 90, 34, 33);
 
         jLabel11.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel11.setText("9º");
         getContentPane().add(jLabel11);
-        jLabel11.setBounds(370, 120, 34, 33);
+        jLabel11.setBounds(370, 150, 34, 33);
 
         jLabel29.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel29.setText("20º");
         getContentPane().add(jLabel29);
-        jLabel29.setBounds(230, 230, 34, 33);
+        jLabel29.setBounds(230, 260, 34, 33);
 
         qt20.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -484,12 +484,12 @@ public class CadastrarGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt20);
-        qt20.setBounds(270, 230, 44, 33);
+        qt20.setBounds(270, 260, 44, 33);
 
         jLabel28.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel28.setText("19º");
         getContentPane().add(jLabel28);
-        jLabel28.setBounds(110, 230, 34, 33);
+        jLabel28.setBounds(110, 260, 34, 33);
 
         qt21.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -497,7 +497,7 @@ public class CadastrarGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt21);
-        qt21.setBounds(410, 230, 44, 33);
+        qt21.setBounds(410, 260, 44, 33);
 
         qt19.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -505,17 +505,17 @@ public class CadastrarGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt19);
-        qt19.setBounds(150, 230, 44, 33);
+        qt19.setBounds(150, 260, 44, 33);
 
         jLabel27.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel27.setText("21º");
         getContentPane().add(jLabel27);
-        jLabel27.setBounds(370, 230, 34, 33);
+        jLabel27.setBounds(370, 260, 34, 33);
 
         jLabel40.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel40.setText("34º");
         getContentPane().add(jLabel40);
-        jLabel40.setBounds(510, 340, 34, 33);
+        jLabel40.setBounds(510, 370, 34, 33);
 
         qt33.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -523,7 +523,7 @@ public class CadastrarGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt33);
-        qt33.setBounds(410, 340, 44, 33);
+        qt33.setBounds(410, 370, 44, 33);
 
         qt34.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -531,17 +531,17 @@ public class CadastrarGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt34);
-        qt34.setBounds(550, 340, 44, 33);
+        qt34.setBounds(550, 370, 44, 33);
 
         jLabel35.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel35.setText("33º");
         getContentPane().add(jLabel35);
-        jLabel35.setBounds(370, 340, 34, 33);
+        jLabel35.setBounds(370, 370, 34, 33);
 
         jLabel32.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel32.setText("37º");
         getContentPane().add(jLabel32);
-        jLabel32.setBounds(110, 390, 34, 33);
+        jLabel32.setBounds(110, 420, 34, 33);
 
         qt37.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -549,12 +549,12 @@ public class CadastrarGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt37);
-        qt37.setBounds(150, 390, 44, 33);
+        qt37.setBounds(150, 420, 44, 33);
 
         jLabel44.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel44.setText("40º");
         getContentPane().add(jLabel44);
-        jLabel44.setBounds(510, 390, 34, 33);
+        jLabel44.setBounds(510, 420, 34, 33);
 
         qt40.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -567,12 +567,12 @@ public class CadastrarGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt40);
-        qt40.setBounds(550, 390, 44, 33);
+        qt40.setBounds(550, 420, 44, 33);
 
         jLabel16.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel16.setText("27º");
         getContentPane().add(jLabel16);
-        jLabel16.setBounds(370, 290, 34, 33);
+        jLabel16.setBounds(370, 320, 34, 33);
 
         qt36.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -580,7 +580,7 @@ public class CadastrarGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt36);
-        qt36.setBounds(810, 340, 44, 33);
+        qt36.setBounds(810, 370, 44, 33);
 
         qt24.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -588,22 +588,22 @@ public class CadastrarGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt24);
-        qt24.setBounds(810, 230, 44, 33);
+        qt24.setBounds(810, 260, 44, 33);
 
         jLabel19.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel19.setText("24º");
         getContentPane().add(jLabel19);
-        jLabel19.setBounds(770, 230, 34, 33);
+        jLabel19.setBounds(770, 260, 34, 33);
 
         jLabel39.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel39.setText("36º");
         getContentPane().add(jLabel39);
-        jLabel39.setBounds(770, 340, 34, 33);
+        jLabel39.setBounds(770, 370, 34, 33);
 
         jLabel22.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel22.setText("23º");
         getContentPane().add(jLabel22);
-        jLabel22.setBounds(630, 230, 34, 33);
+        jLabel22.setBounds(630, 260, 34, 33);
 
         qt23.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -611,12 +611,12 @@ public class CadastrarGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt23);
-        qt23.setBounds(670, 230, 44, 33);
+        qt23.setBounds(670, 260, 44, 33);
 
         jLabel18.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel18.setText("26º");
         getContentPane().add(jLabel18);
-        jLabel18.setBounds(230, 290, 34, 33);
+        jLabel18.setBounds(230, 320, 34, 33);
 
         qt26.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -624,12 +624,12 @@ public class CadastrarGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt26);
-        qt26.setBounds(270, 290, 44, 33);
+        qt26.setBounds(270, 320, 44, 33);
 
         jLabel21.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel21.setText("29º");
         getContentPane().add(jLabel21);
-        jLabel21.setBounds(630, 290, 34, 33);
+        jLabel21.setBounds(630, 320, 34, 33);
 
         qt29.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -637,12 +637,12 @@ public class CadastrarGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt29);
-        qt29.setBounds(670, 290, 44, 33);
+        qt29.setBounds(670, 320, 44, 33);
 
         jLabel36.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel36.setText("32º");
         getContentPane().add(jLabel36);
-        jLabel36.setBounds(230, 340, 34, 33);
+        jLabel36.setBounds(230, 370, 34, 33);
 
         qt32.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -650,12 +650,12 @@ public class CadastrarGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt32);
-        qt32.setBounds(270, 340, 44, 33);
+        qt32.setBounds(270, 370, 44, 33);
 
         jLabel41.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel41.setText("35º");
         getContentPane().add(jLabel41);
-        jLabel41.setBounds(630, 340, 34, 33);
+        jLabel41.setBounds(630, 370, 34, 33);
 
         qt35.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -663,12 +663,12 @@ public class CadastrarGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt35);
-        qt35.setBounds(670, 340, 44, 33);
+        qt35.setBounds(670, 370, 44, 33);
 
         jLabel34.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel34.setText("38º");
         getContentPane().add(jLabel34);
-        jLabel34.setBounds(230, 390, 34, 33);
+        jLabel34.setBounds(230, 420, 34, 33);
 
         qt38.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -676,12 +676,12 @@ public class CadastrarGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt38);
-        qt38.setBounds(270, 390, 44, 33);
+        qt38.setBounds(270, 420, 44, 33);
 
         jLabel45.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel45.setText("41º");
         getContentPane().add(jLabel45);
-        jLabel45.setBounds(630, 390, 34, 33);
+        jLabel45.setBounds(630, 420, 34, 33);
 
         qt41.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -689,7 +689,7 @@ public class CadastrarGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt41);
-        qt41.setBounds(670, 390, 44, 33);
+        qt41.setBounds(670, 420, 44, 33);
 
         qt39.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -702,12 +702,12 @@ public class CadastrarGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt39);
-        qt39.setBounds(410, 390, 44, 33);
+        qt39.setBounds(410, 420, 44, 33);
 
         jLabel26.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel26.setText("30º");
         getContentPane().add(jLabel26);
-        jLabel26.setBounds(770, 290, 34, 33);
+        jLabel26.setBounds(770, 320, 34, 33);
 
         qt30.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -715,7 +715,7 @@ public class CadastrarGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt30);
-        qt30.setBounds(810, 290, 44, 33);
+        qt30.setBounds(810, 320, 44, 33);
 
         qt22.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -723,17 +723,17 @@ public class CadastrarGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt22);
-        qt22.setBounds(550, 230, 44, 33);
+        qt22.setBounds(550, 260, 44, 33);
 
         jLabel20.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel20.setText("22º");
         getContentPane().add(jLabel20);
-        jLabel20.setBounds(510, 230, 34, 33);
+        jLabel20.setBounds(510, 260, 34, 33);
 
         jLabel17.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel17.setText("25º");
         getContentPane().add(jLabel17);
-        jLabel17.setBounds(110, 290, 34, 33);
+        jLabel17.setBounds(110, 320, 34, 33);
 
         qt25.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -741,12 +741,12 @@ public class CadastrarGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt25);
-        qt25.setBounds(150, 290, 44, 33);
+        qt25.setBounds(150, 320, 44, 33);
 
         jLabel25.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel25.setText("28º");
         getContentPane().add(jLabel25);
-        jLabel25.setBounds(510, 290, 34, 33);
+        jLabel25.setBounds(510, 320, 34, 33);
 
         qt28.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -754,7 +754,7 @@ public class CadastrarGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt28);
-        qt28.setBounds(550, 290, 44, 33);
+        qt28.setBounds(550, 320, 44, 33);
 
         qt27.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -762,17 +762,17 @@ public class CadastrarGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt27);
-        qt27.setBounds(410, 290, 44, 33);
+        qt27.setBounds(410, 320, 44, 33);
 
         jLabel42.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel42.setText("31º");
         getContentPane().add(jLabel42);
-        jLabel42.setBounds(110, 340, 34, 33);
+        jLabel42.setBounds(110, 370, 34, 33);
 
         jLabel31.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel31.setText("39º");
         getContentPane().add(jLabel31);
-        jLabel31.setBounds(370, 390, 34, 33);
+        jLabel31.setBounds(370, 420, 34, 33);
 
         qt31.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -780,12 +780,12 @@ public class CadastrarGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt31);
-        qt31.setBounds(150, 340, 44, 33);
+        qt31.setBounds(150, 370, 44, 33);
 
         jLabel38.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel38.setText("45º");
         getContentPane().add(jLabel38);
-        jLabel38.setBounds(370, 440, 34, 33);
+        jLabel38.setBounds(370, 470, 34, 33);
 
         qt45.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -793,7 +793,7 @@ public class CadastrarGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt45);
-        qt45.setBounds(410, 440, 44, 33);
+        qt45.setBounds(410, 470, 44, 33);
 
         qt42.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -801,17 +801,17 @@ public class CadastrarGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt42);
-        qt42.setBounds(810, 390, 44, 33);
+        qt42.setBounds(810, 420, 44, 33);
 
         jLabel43.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel43.setText("42º");
         getContentPane().add(jLabel43);
-        jLabel43.setBounds(770, 390, 34, 33);
+        jLabel43.setBounds(770, 420, 34, 33);
 
         jLabel37.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel37.setText("43º");
         getContentPane().add(jLabel37);
-        jLabel37.setBounds(110, 440, 34, 33);
+        jLabel37.setBounds(110, 470, 34, 33);
 
         qt43.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -819,12 +819,12 @@ public class CadastrarGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt43);
-        qt43.setBounds(150, 440, 44, 33);
+        qt43.setBounds(150, 470, 44, 33);
 
         jLabel33.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel33.setText("44º");
         getContentPane().add(jLabel33);
-        jLabel33.setBounds(230, 440, 34, 33);
+        jLabel33.setBounds(230, 470, 34, 33);
 
         qt44.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -832,9 +832,11 @@ public class CadastrarGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt44);
-        qt44.setBounds(270, 440, 44, 33);
+        qt44.setBounds(270, 470, 44, 33);
 
         SalvarGabarito.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/SALVAR_1.png"))); // NOI18N
+        SalvarGabarito.setBorderPainted(false);
+        SalvarGabarito.setContentAreaFilled(false);
         SalvarGabarito.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SalvarGabaritoActionPerformed(evt);
@@ -844,6 +846,8 @@ public class CadastrarGabarito extends javax.swing.JDialog {
         SalvarGabarito.setBounds(120, 600, 100, 50);
 
         LimparCampos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/limpar.png"))); // NOI18N
+        LimparCampos.setBorderPainted(false);
+        LimparCampos.setContentAreaFilled(false);
         LimparCampos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 LimparCamposActionPerformed(evt);
@@ -858,6 +862,8 @@ public class CadastrarGabarito extends javax.swing.JDialog {
         jLabel46.setBounds(230, 520, 160, 26);
 
         Excluir2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/EXCLUIR.png"))); // NOI18N
+        Excluir2.setBorderPainted(false);
+        Excluir2.setContentAreaFilled(false);
         Excluir2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Excluir2ActionPerformed(evt);
@@ -867,6 +873,8 @@ public class CadastrarGabarito extends javax.swing.JDialog {
         Excluir2.setBounds(690, 600, 100, 50);
 
         Pesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/PESQUISAR2.png"))); // NOI18N
+        Pesquisar.setBorderPainted(false);
+        Pesquisar.setContentAreaFilled(false);
         Pesquisar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 PesquisarActionPerformed(evt);
@@ -892,7 +900,7 @@ public class CadastrarGabarito extends javax.swing.JDialog {
         jLabel48.setFont(new java.awt.Font("Geometr415 Blk BT", 1, 36)); // NOI18N
         jLabel48.setText("CADASTRAR GABARITO");
         getContentPane().add(jLabel48);
-        jLabel48.setBounds(191, 0, 439, 44);
+        jLabel48.setBounds(310, 0, 439, 44);
 
         jLabel49.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/TRANPARENTE CONTORNO.png"))); // NOI18N
         getContentPane().add(jLabel49);

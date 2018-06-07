@@ -57,13 +57,15 @@ public class Login extends javax.swing.JFrame {
         JBEntrar.setBackground(new java.awt.Color(51, 153, 255));
         JBEntrar.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         JBEntrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/tela fvs principal_1.png"))); // NOI18N
+        JBEntrar.setBorderPainted(false);
+        JBEntrar.setContentAreaFilled(false);
         JBEntrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 JBEntrarActionPerformed(evt);
             }
         });
         jPanel1.add(JBEntrar);
-        JBEntrar.setBounds(240, 270, 80, 39);
+        JBEntrar.setBounds(230, 270, 100, 41);
 
         JCLogin.setBackground(new java.awt.Color(204, 204, 204));
         JCLogin.setDisabledTextColor(new java.awt.Color(255, 255, 255));
@@ -99,14 +101,16 @@ public class Login extends javax.swing.JFrame {
 
         JBSair.setBackground(new java.awt.Color(51, 153, 255));
         JBSair.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        JBSair.setText("X");
+        JBSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/x.png"))); // NOI18N
+        JBSair.setBorderPainted(false);
+        JBSair.setContentAreaFilled(false);
         JBSair.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 JBSairActionPerformed(evt);
             }
         });
         jPanel1.add(JBSair);
-        JBSair.setBounds(500, 10, 48, 31);
+        JBSair.setBounds(500, 10, 48, 29);
 
         JLSenha2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         JLSenha2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);

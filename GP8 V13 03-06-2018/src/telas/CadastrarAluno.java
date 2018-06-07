@@ -158,23 +158,27 @@ public class CadastrarAluno extends javax.swing.JDialog {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(null);
 
-        CarregarArquivo.setText("CARREGAR ARQUIVO");
+        CarregarArquivo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/CARREGARARQUIVO.png"))); // NOI18N
+        CarregarArquivo.setBorderPainted(false);
+        CarregarArquivo.setContentAreaFilled(false);
         CarregarArquivo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CarregarArquivoActionPerformed(evt);
             }
         });
         getContentPane().add(CarregarArquivo);
-        CarregarArquivo.setBounds(460, 280, 139, 23);
+        CarregarArquivo.setBounds(480, 270, 110, 40);
 
         SalvarArquivo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/salvar arquivo_1.png"))); // NOI18N
+        SalvarArquivo.setBorderPainted(false);
+        SalvarArquivo.setContentAreaFilled(false);
         SalvarArquivo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SalvarArquivoActionPerformed(evt);
             }
         });
         getContentPane().add(SalvarArquivo);
-        SalvarArquivo.setBounds(480, 310, 110, 30);
+        SalvarArquivo.setBounds(480, 310, 110, 40);
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel6.setText("PRIMEIRA OPÇÃO DE CURSO");
@@ -188,14 +192,16 @@ public class CadastrarAluno extends javax.swing.JDialog {
         getContentPane().add(Nome);
         Nome.setBounds(71, 33, 219, 32);
 
-        SalvarAluno.setText("SALVAR ALUNO ");
+        SalvarAluno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/salvar aluno.png"))); // NOI18N
+        SalvarAluno.setBorderPainted(false);
+        SalvarAluno.setContentAreaFilled(false);
         SalvarAluno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SalvarAlunoActionPerformed(evt);
             }
         });
         getContentPane().add(SalvarAluno);
-        SalvarAluno.setBounds(327, 179, 113, 23);
+        SalvarAluno.setBounds(350, 170, 120, 40);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel2.setText("E-MAIL.:");
@@ -206,14 +212,16 @@ public class CadastrarAluno extends javax.swing.JDialog {
         getContentPane().add(Email);
         Email.setBounds(71, 76, 219, 32);
 
-        Voltar.setText("VOLTAR");
+        Voltar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/voltar.png"))); // NOI18N
+        Voltar.setBorderPainted(false);
+        Voltar.setContentAreaFilled(false);
         Voltar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 VoltarActionPerformed(evt);
             }
         });
         getContentPane().add(Voltar);
-        Voltar.setBounds(30, 310, 73, 23);
+        Voltar.setBounds(30, 283, 120, 50);
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel3.setText("TEL.:");
@@ -234,23 +242,27 @@ public class CadastrarAluno extends javax.swing.JDialog {
         getContentPane().add(jLabel5);
         jLabel5.setBounds(364, 108, 151, 22);
 
-        Pesquisar.setText("PESQUISAR");
+        Pesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/PESQUISAR_1.png"))); // NOI18N
+        Pesquisar.setBorderPainted(false);
+        Pesquisar.setContentAreaFilled(false);
         Pesquisar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 PesquisarActionPerformed(evt);
             }
         });
         getContentPane().add(Pesquisar);
-        Pesquisar.setBounds(131, 179, 91, 23);
+        Pesquisar.setBounds(120, 170, 120, 40);
 
-        Excluir.setText("EXCLUIR");
+        Excluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/EXCLUIR_1.png"))); // NOI18N
+        Excluir.setBorderPainted(false);
+        Excluir.setContentAreaFilled(false);
         Excluir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ExcluirActionPerformed(evt);
             }
         });
         getContentPane().add(Excluir);
-        Excluir.setBounds(240, 179, 77, 23);
+        Excluir.setBounds(240, 170, 110, 40);
 
         SegundaOpcaoDeCurso.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Administração", "Analise de Sistemas ", "Ciências Contabeis ", "Direito", "Enfermagem", "Educação Física", "Fisioterapia", "Psicologia ", "Seviço Social" }));
         getContentPane().add(SegundaOpcaoDeCurso);
