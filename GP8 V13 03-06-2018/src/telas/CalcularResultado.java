@@ -26,7 +26,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.JOptionPane;
-import org.hibernate.Hibernate;
 
 /**
  *
@@ -35,6 +34,7 @@ import org.hibernate.Hibernate;
 public class CalcularResultado extends javax.swing.JDialog {
 
     List<CorrigirGabarito> corrigir = new ArrayList<>();
+    CorrigirGabarito corrigirGaba = new CorrigirGabarito();
     CorrigirDAO corrigirDAO = new CorrigirDAO();
     Gabarito gabarito = new Gabarito();
     GabaritoDAO dao = new GabaritoDAO();
@@ -110,7 +110,7 @@ public class CalcularResultado extends javax.swing.JDialog {
             String primeiraOpcao = respostasAlunos.getAluno().getPrimeiraOpcaoDeCurso();
             if (primeiraOpcao.contains("Administração")
                     || primeiraOpcao.contains("Analise de Sistemas")
-                    || primeiraOpcao.contains("Ciências Contábeis")
+                    || primeiraOpcao.contains("Ciências Contabeis")
                     || primeiraOpcao.contains("Psicologia")
                     || primeiraOpcao.contains("Serviço Social")
                     || primeiraOpcao.contains("Direito")) {
@@ -124,34 +124,28 @@ public class CalcularResultado extends javax.swing.JDialog {
     }
 
     public void calcularPesosSaude(CorrigirGabarito respostaAluno) {
-        // CALCULANDO A PONTUAÇÃO DE PORTUGUÊS
-        respostaAluno.setNotaFinal(respostaAluno.getNotaFinal() + (respostaAluno.getQtdAcertosPortugues() * 20));
 
-        //CALCULANDO A PONTUAÇÃO DE MATEMÁTICA
-        respostaAluno.setNotaFinal(respostaAluno.getNotaFinal() + (respostaAluno.getQtdAcertosMatematica() * 20));
-
-        respostaAluno.setNotaFinal(respostaAluno.getNotaFinal() + (respostaAluno.getQtdAcertosBiologia() * 20));
-        respostaAluno.setNotaFinal(respostaAluno.getNotaFinal() + (respostaAluno.getQtdAcertosFisica() * 20));
-        respostaAluno.setNotaFinal(respostaAluno.getNotaFinal() + (respostaAluno.getQtdAcertosGeografia() * 20));
-        respostaAluno.setNotaFinal(respostaAluno.getNotaFinal() + (respostaAluno.getQtdAcertosHistoria() * 20));
-        respostaAluno.setNotaFinal(respostaAluno.getNotaFinal() + (respostaAluno.getQtdAcertosLinguas() * 20));
-        respostaAluno.setNotaFinal(respostaAluno.getNotaFinal() + (respostaAluno.getQtdAcertosQuimica() * 20));
+        respostaAluno.setNotaFinal(respostaAluno.getNotaFinal() + (respostaAluno.getQtdAcertosPortugues() * 40));
+        respostaAluno.setNotaFinal(respostaAluno.getNotaFinal() + (respostaAluno.getQtdAcertosMatematica() * 40));
+        respostaAluno.setNotaFinal(respostaAluno.getNotaFinal() + (respostaAluno.getQtdAcertosBiologia() * 60));
+        respostaAluno.setNotaFinal(respostaAluno.getNotaFinal() + (respostaAluno.getQtdAcertosFisica() * 60));
+        respostaAluno.setNotaFinal(respostaAluno.getNotaFinal() + (respostaAluno.getQtdAcertosGeografia() * 240));
+        respostaAluno.setNotaFinal(respostaAluno.getNotaFinal() + (respostaAluno.getQtdAcertosHistoria() * 40));
+        respostaAluno.setNotaFinal(respostaAluno.getNotaFinal() + (respostaAluno.getQtdAcertosLinguas() * 40));
+        respostaAluno.setNotaFinal(respostaAluno.getNotaFinal() + (respostaAluno.getQtdAcertosQuimica() * 60));
 
     }
 
     public void calcularPesosExatas(CorrigirGabarito respostaAluno) {
-        // CALCULANDO A PONTUAÇÃO DE PORTUGUÊS
-        respostaAluno.setNotaFinal(respostaAluno.getNotaFinal() + (respostaAluno.getQtdAcertosPortugues() * 40));
 
-        //CALCULANDO A PONTUAÇÃO DE MATEMÁTICA
+        respostaAluno.setNotaFinal(respostaAluno.getNotaFinal() + (respostaAluno.getQtdAcertosPortugues() * 60));
         respostaAluno.setNotaFinal(respostaAluno.getNotaFinal() + (respostaAluno.getQtdAcertosMatematica() * 40));
-
-        respostaAluno.setNotaFinal(respostaAluno.getNotaFinal() + (respostaAluno.getQtdAcertosBiologia() * 40));
-        respostaAluno.setNotaFinal(respostaAluno.getNotaFinal() + (respostaAluno.getQtdAcertosFisica() * 40));
-        respostaAluno.setNotaFinal(respostaAluno.getNotaFinal() + (respostaAluno.getQtdAcertosGeografia() * 40));
-        respostaAluno.setNotaFinal(respostaAluno.getNotaFinal() + (respostaAluno.getQtdAcertosHistoria() * 40));
-        respostaAluno.setNotaFinal(respostaAluno.getNotaFinal() + (respostaAluno.getQtdAcertosLinguas() * 40));
-        respostaAluno.setNotaFinal(respostaAluno.getNotaFinal() + (respostaAluno.getQtdAcertosQuimica() * 40));
+        respostaAluno.setNotaFinal(respostaAluno.getNotaFinal() + (respostaAluno.getQtdAcertosBiologia() * 20));
+        respostaAluno.setNotaFinal(respostaAluno.getNotaFinal() + (respostaAluno.getQtdAcertosFisica() * 20));
+        respostaAluno.setNotaFinal(respostaAluno.getNotaFinal() + (respostaAluno.getQtdAcertosGeografia() * 60));
+        respostaAluno.setNotaFinal(respostaAluno.getNotaFinal() + (respostaAluno.getQtdAcertosHistoria() * 60));
+        respostaAluno.setNotaFinal(respostaAluno.getNotaFinal() + (respostaAluno.getQtdAcertosLinguas() * 60));
+        respostaAluno.setNotaFinal(respostaAluno.getNotaFinal() + (respostaAluno.getQtdAcertosQuimica() * 20));
     }
 
     /**
@@ -283,7 +277,7 @@ public class CalcularResultado extends javax.swing.JDialog {
 
     private void GerarRelatorioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GerarRelatorioActionPerformed
         Document document = new Document();
-        List<Aluno> aluno1 = alunoDAO.listarAluno();
+        List<CorrigirGabarito> corrigir1 = corrigirDAO.listarCorrigirGabarito();
 
         try {
             PdfWriter.getInstance(document, new FileOutputStream("Documento.pdf"));
@@ -298,19 +292,42 @@ public class CalcularResultado extends javax.swing.JDialog {
 
             PdfPTable tabela = new PdfPTable(1);
 
-            PdfPCell cel2 = new PdfPCell(new Paragraph("NOME"));
+            for (CorrigirGabarito corrigir : corrigir1) {
 
-            tabela.addCell(cel2);
+                if (corrigir.getQtdAcertosRedacao() > 0 && corrigir.getAluno().getPrimeiraOpcaoDeCurso().contains("Administração")) {
+                    PdfPCell cel2 = new PdfPCell(new Paragraph("Administração"));
 
-            for (Aluno aluno : aluno1) {
+                    tabela.addCell(cel2);
+                    String nome = corrigir.getAluno().getNome();
 
-                cel2 = new PdfPCell(new Paragraph(aluno.getNome()));
+                    cel2 = new PdfPCell(new Paragraph(nome));
 
-                tabela.addCell(cel2);
+                    tabela.addCell(cel2);
+
+                }
+                if (corrigir.getQtdAcertosRedacao() > 0 && corrigir.getAluno().getPrimeiraOpcaoDeCurso().contains("Analise de Sistemas")) {
+                    PdfPCell cel2 = new PdfPCell(new Paragraph("ADS"));
+                    tabela.addCell(cel2);
+                    String nome = corrigir.getAluno().getNome();
+
+                    cel2 = new PdfPCell(new Paragraph(nome));
+
+                    tabela.addCell(cel2);
+
+                }
+                if (corrigir.getQtdAcertosRedacao() > 0 && corrigir.getAluno().getPrimeiraOpcaoDeCurso().contains("Ciências Contabeis")) {
+                    PdfPCell cel2 = new PdfPCell(new Paragraph("Ciências Contabeis"));
+                    tabela.addCell(cel2);
+                    String nome = corrigir.getAluno().getNome();
+
+                    cel2 = new PdfPCell(new Paragraph(nome));
+
+                    tabela.addCell(cel2);
+
+                }
 
             }
             document.add(tabela);
-
         } catch (FileNotFoundException | DocumentException ex) {
             System.out.println("Erro: " + ex);
         } finally {

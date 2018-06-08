@@ -29,24 +29,24 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
  * @author ALCIOMAR
  */
 public class CadastrarAluno extends javax.swing.JDialog {
-
+    
     Aluno aluno = new Aluno();
     AlunoDAO alunoDAO = new AlunoDAO();
-
+    
     String caminho;
     List<Aluno> listaAlunos = new ArrayList<>();
-
+    
     List<String> lista = new ArrayList<>();
-
+    
     public void limparCampos() {
         util.Util.limparCamposJDialog(this);
         aluno = new Aluno();
         Excluir.setEnabled(false);
     }
-
+    
     public void lerXLS() {
         FileInputStream fisPlanilha = null;
-
+        
         try {
             fisPlanilha = new FileInputStream(caminho);
             //cria um workbook = planilha toda com todas as abas
@@ -93,18 +93,18 @@ public class CadastrarAluno extends javax.swing.JDialog {
                         aluno.setSegundaOpcaoDeCurso(cell.getStringCellValue());
                         contador++;
                     } else if (contador == 6) {
-
+                        
                         contador = 0;
-
+                        
                         aluno.setCpf(cell.getStringCellValue());
                         listaAlunos.add(aluno);
                         aluno = new Aluno();
                     }
-
+                    
                 }
-
+                
             }
-
+            
         } catch (FileNotFoundException ex) {
             Logger.getLogger(CadastrarAluno.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
@@ -116,7 +116,7 @@ public class CadastrarAluno extends javax.swing.JDialog {
                 Logger.getLogger(CadastrarAluno.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
-
+        
     }
 
     /**
@@ -286,7 +286,7 @@ public class CadastrarAluno extends javax.swing.JDialog {
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/tela cadastrar aluno.png"))); // NOI18N
         getContentPane().add(jLabel7);
-        jLabel7.setBounds(0, 0, 620, 350);
+        jLabel7.setBounds(0, 0, 630, 370);
 
         pack();
         setLocationRelativeTo(null);
@@ -301,7 +301,7 @@ public class CadastrarAluno extends javax.swing.JDialog {
             caminho = arquivo.getSelectedFile().getAbsolutePath();
             Arquivo.setText(caminho);
             lerXLS();
-
+            
         }
     }//GEN-LAST:event_CarregarArquivoActionPerformed
 
@@ -314,7 +314,7 @@ public class CadastrarAluno extends javax.swing.JDialog {
             limparCampos();
         } else {
             JOptionPane.showMessageDialog(null, "Dados nao Inseridos!");
-
+            
         }
     }//GEN-LAST:event_SalvarArquivoActionPerformed
 
@@ -324,7 +324,7 @@ public class CadastrarAluno extends javax.swing.JDialog {
                     && !Cidade.getText().equals("")
                     && !PrimeiraOpcaoDeCurso.getSelectedItem().equals("")
                     && !SegundaOpcaoDeCurso.getSelectedItem().equals("")) {
-
+                
                 aluno.setNome(Nome.getText());
                 aluno.setEmail(Email.getText());
                 aluno.setCidade(Cidade.getText());
@@ -332,12 +332,12 @@ public class CadastrarAluno extends javax.swing.JDialog {
                 aluno.setPrimeiraOpcaoDeCurso(String.valueOf(PrimeiraOpcaoDeCurso.getSelectedItem()));
                 aluno.setSegundaOpcaoDeCurso(String.valueOf(SegundaOpcaoDeCurso.getSelectedItem()));
                 aluno.setCpf(String.valueOf(Cpf.getText()));
-
+                
                 if (aluno.getId() == 0) {
-
+                    
                     alunoDAO.salvarAluno(aluno);
                     JOptionPane.showMessageDialog(null, "Aluno cadastrado com sucesso!");
-
+                    
                 } else {
                     alunoDAO.editarAluno(aluno);
                     JOptionPane.showMessageDialog(null, "Aluno editado com sucesso!");
@@ -346,14 +346,14 @@ public class CadastrarAluno extends javax.swing.JDialog {
             } else {
                 JOptionPane.showMessageDialog(null, "Existem campos obrigatórios que não foram preenchidos!");
             }
-
+            
         } else {
             JOptionPane.showMessageDialog(null, "CPF já cadastrado");
         }
     }//GEN-LAST:event_SalvarAlunoActionPerformed
 
     private void VoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VoltarActionPerformed
-
+        
         EscolhaDeAcao escolhaDeAcao = new EscolhaDeAcao();
         escolhaDeAcao.setVisible(true);
         dispose();
@@ -372,9 +372,10 @@ public class CadastrarAluno extends javax.swing.JDialog {
             Cidade.setText(aluno.getCidade());
             PrimeiraOpcaoDeCurso.setSelectedItem(aluno.getPrimeiraOpcaoDeCurso());
             SegundaOpcaoDeCurso.setSelectedItem(aluno.getSegundaOpcaoDeCurso());
-
+            Cpf.setText(aluno.getCpf());
+            
             Excluir.setEnabled(true);
-
+            
         }
 
     }//GEN-LAST:event_PesquisarActionPerformed
