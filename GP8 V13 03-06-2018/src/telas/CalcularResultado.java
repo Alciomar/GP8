@@ -12,7 +12,6 @@ import aluno.Aluno;
 import aluno.AlunoDAO;
 import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;
-import com.itextpdf.text.Element;
 import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.pdf.PdfPCell;
 import com.itextpdf.text.pdf.PdfPTable;
@@ -27,6 +26,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.JOptionPane;
+import org.hibernate.Hibernate;
 
 /**
  *
@@ -47,6 +47,12 @@ public class CalcularResultado extends javax.swing.JDialog {
     public CalcularResultado(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+    }
+
+    public List<Aluno> buscarAluno() {
+        List<Aluno> alunos = new ArrayList<>();
+        /* a regra de negocio da consulta */
+        return alunos;
     }
 
     public void calcularPontuacao() {
@@ -290,19 +296,16 @@ public class CalcularResultado extends javax.swing.JDialog {
             paragrafo = new Paragraph("");
             document.add(paragrafo);
 
-            PdfPTable tabela = new PdfPTable(2);
+            PdfPTable tabela = new PdfPTable(1);
 
-            PdfPCell cel1 = new PdfPCell(new Paragraph("ID"));
             PdfPCell cel2 = new PdfPCell(new Paragraph("NOME"));
 
-            tabela.addCell(cel1);
             tabela.addCell(cel2);
 
             for (Aluno aluno : aluno1) {
-                cel1 = new PdfPCell(new Paragraph(aluno.getId() + ""));
+
                 cel2 = new PdfPCell(new Paragraph(aluno.getNome()));
 
-                tabela.addCell(cel1);
                 tabela.addCell(cel2);
 
             }
