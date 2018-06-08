@@ -25,23 +25,23 @@ import util.LetraMaiuscula;
  * @author ALCIOMAR
  */
 public class TelaCorrigirGabarito extends javax.swing.JDialog {
-    
+
     CorrigirGabarito corrigir = new CorrigirGabarito();
     CorrigirDAO corrigirDAO = new CorrigirDAO();
     Gabarito gabarito = new Gabarito();
     GabaritoDAO dao = new GabaritoDAO();
     Aluno aluno = new Aluno();
     AlunoDAO alunoDAO = new AlunoDAO();
-    
+
     Gson json = new Gson();
-    
+
     public TelaCorrigirGabarito(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
         Excluir.setEnabled(false);
-        
+
     }
-    
+
     public void limparCampos() {
         util.Util.limparCamposJDialog(this);
         gabarito = new Gabarito();
@@ -49,7 +49,7 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
         aluno = new Aluno();
         Excluir.setEnabled(false);
     }
-    
+
     public void preencherCampos() {
         corrigir.setRespostaJSON(corrigir.getRespostaJSON().replace("\"", "").replace("[", "").replace("]", ""));
         corrigir.setResposta(corrigir.getRespostaJSON().split(","));
@@ -101,7 +101,7 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
         qt43.setText(corrigir.getResposta()[42]);
         qt44.setText(corrigir.getResposta()[43]);
         qt45.setText(corrigir.getResposta()[44]);
-        
+
     }
 
     /**
@@ -983,6 +983,12 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
         jLabel49.setText("NOTA DA REDAÇÃO");
         getContentPane().add(jLabel49);
         jLabel49.setBounds(497, 490, 110, 34);
+
+        NotaDaRedacao.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                NotaDaRedacaoKeyTyped(evt);
+            }
+        });
         getContentPane().add(NotaDaRedacao);
         NotaDaRedacao.setBounds(610, 490, 83, 34);
 
@@ -1050,7 +1056,7 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
     }//GEN-LAST:event_qt01KeyReleased
 
     private void qt01KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_qt01KeyTyped
-        
+
         int ascii = evt.getKeyChar();
         qt01.setDocument(new LetraMaiuscula());
         if (!(ascii >= 65 && ascii <= 69) && !(ascii >= 97 && ascii <= 101) && !(ascii == evt.VK_BACK_SPACE)) {
@@ -1566,7 +1572,7 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
         if (!(ascii >= 65 && ascii <= 69) && !(ascii >= 97 && ascii <= 101) && !(ascii == evt.VK_BACK_SPACE)) {
             evt.consume();
         } else {
-            tfNomeAluno.requestFocus();
+            NotaDaRedacao.requestFocus();
         }
         if (qt45.getText().length() >= 1) {
             evt.consume();
@@ -1613,9 +1619,9 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
     }//GEN-LAST:event_qt44KeyTyped
 
     private void SalvarGabaritoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SalvarGabaritoActionPerformed
-        
+
         preencherArray();
-        
+
         corrigir.setRespostaJSON(json.toJson(corrigir.getResposta()));
         corrigir.setQtdAcertosRedacao(Integer.parseInt(NotaDaRedacao.getText()));
         if (corrigir.getId() == 0) {
@@ -1630,12 +1636,12 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
     }//GEN-LAST:event_SalvarGabaritoActionPerformed
 
     private void LimparCamposActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LimparCamposActionPerformed
-        
+
         limparCampos();
     }//GEN-LAST:event_LimparCamposActionPerformed
 
     private void VoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VoltarActionPerformed
-        
+
         EscolhaDeAcao escolhaDeAcao = new EscolhaDeAcao();
         escolhaDeAcao.setVisible(true);
         dispose();
@@ -1650,7 +1656,7 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
     }//GEN-LAST:event_tfNomeAlunoKeyTyped
 
     private void PesquisarAlunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PesquisarAlunoActionPerformed
-        
+
         List<Aluno> lista;
         lista = (alunoDAO.listarAluno());
         AlunoTableModel itm = new AlunoTableModel(lista);
@@ -1660,7 +1666,7 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             tfNomeAluno.setText(aluno.getNome());
             corrigir.setAluno(aluno);
             Excluir.setEnabled(true);
-            
+
         }
     }//GEN-LAST:event_PesquisarAlunoActionPerformed
 
@@ -1687,9 +1693,9 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             gabarito = dao.pesquisarGabarito((Integer) objetoRetorno);
             tfProcessoSeletivo.setText(gabarito.getNomeGabarito());
             corrigir.setGabarito(gabarito);
-            
+
         }
-        
+
 
     }//GEN-LAST:event_PesquisarProcessoSeletivoActionPerformed
 
@@ -1702,21 +1708,31 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             corrigir = corrigirDAO.pesquisarCorrigirGabarito((Integer) objetoRetorno);
             preencherCampos();
             Excluir.setEnabled(true);
-            
+
         }
 
     }//GEN-LAST:event_PesquisarGabaritoActionPerformed
-    
+
+    private void NotaDaRedacaoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_NotaDaRedacaoKeyTyped
+        int ascii = evt.getKeyChar();
+        if (!(ascii >= 48 && ascii <= 57) && !(ascii == evt.VK_BACK_SPACE)) {
+            evt.consume();
+        } else {
+            NotaDaRedacao.requestFocus();
+        }
+
+    }//GEN-LAST:event_NotaDaRedacaoKeyTyped
+
     public void verificarCampos(int posicao, JTextField tf) {
-        
+
         if (tf.getText().isEmpty()) {
             corrigir.getResposta()[posicao] = "nula";
         } else {
             corrigir.getResposta()[posicao] = tf.getText().toUpperCase();
         }
-        
+
     }
-    
+
     public void preencherArray() {
         verificarCampos(0, qt01);
         verificarCampos(1, qt02);
@@ -1763,7 +1779,7 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
         verificarCampos(42, qt43);
         verificarCampos(43, qt44);
         verificarCampos(44, qt45);
-        
+
     }
 
     /**
