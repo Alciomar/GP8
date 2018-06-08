@@ -28,7 +28,7 @@ public class Aluno {
     private String cidade;
     private String primeiraOpcaoDeCurso;
     private String segundaOpcaoDeCurso;
-    
+    private String Cpf;
 
     //  @OneToOne
     // private corrigirGabarito.CorrigirGabarito corrigirGabarito;
@@ -133,6 +133,18 @@ public class Aluno {
         this.cidade = cidade;
     }
 
+    /**
+     * @return the Cpf
+     */
+    public String getCpf() {
+        return Cpf;
+    }
 
+    /**
+     * @param Cpf the Cpf to set
+     */
+    public void setCpf(String Cpf) {
+        this.Cpf = Cpf;
+    }
 
 }

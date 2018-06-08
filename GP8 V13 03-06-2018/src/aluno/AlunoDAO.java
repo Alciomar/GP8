@@ -65,4 +65,13 @@ public class AlunoDAO {
         return aluno;
     }
 
+    public Aluno validarAluno(String cpf) {
+        iniciarSessao();
+        Aluno cpfAluno = (Aluno) sessao.createCriteria(Aluno.class)
+                .add(Restrictions.eq("Cpf", cpf))
+                .uniqueResult();
+        sessao.close();
+        return cpfAluno;
+    }
+
 }
