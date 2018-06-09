@@ -65,7 +65,7 @@ public class Login extends javax.swing.JFrame {
             }
         });
         jPanel1.add(JBEntrar);
-        JBEntrar.setBounds(230, 270, 100, 41);
+        JBEntrar.setBounds(230, 270, 100, 39);
 
         JCLogin.setBackground(new java.awt.Color(204, 204, 204));
         JCLogin.setDisabledTextColor(new java.awt.Color(255, 255, 255));
