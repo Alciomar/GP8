@@ -59,124 +59,116 @@ public class CadastrarUsuario extends javax.swing.JDialog {
         SalvarUsuario = new javax.swing.JButton();
         Voltar = new javax.swing.JButton();
         cargo = new javax.swing.JComboBox<>();
+        transparencia = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(537, 349));
+        setUndecorated(true);
+        setPreferredSize(new java.awt.Dimension(537, 349));
+        getContentPane().setLayout(null);
 
-        Limpar.setText("LIMPAR");
+        Limpar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/LIMPAR_1.png"))); // NOI18N
+        Limpar.setBorderPainted(false);
+        Limpar.setContentAreaFilled(false);
         Limpar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 LimparActionPerformed(evt);
             }
         });
+        getContentPane().add(Limpar);
+        Limpar.setBounds(30, 250, 120, 41);
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel1.setText("CADASTRO DE USUARIO");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(180, 10, 250, 27);
 
-        Pesquisar.setText("PESQUISAR");
+        Pesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/PESQUISAR_1.png"))); // NOI18N
+        Pesquisar.setBorderPainted(false);
+        Pesquisar.setContentAreaFilled(false);
         Pesquisar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 PesquisarActionPerformed(evt);
             }
         });
+        getContentPane().add(Pesquisar);
+        Pesquisar.setBounds(270, 250, 120, 39);
 
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel2.setText("NOME:");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(120, 80, 51, 24);
 
-        Excluir.setText("EXCLUIR");
+        Excluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/EXCLUIR_1.png"))); // NOI18N
+        Excluir.setToolTipText("");
+        Excluir.setBorderPainted(false);
+        Excluir.setContentAreaFilled(false);
         Excluir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ExcluirActionPerformed(evt);
             }
         });
+        getContentPane().add(Excluir);
+        Excluir.setBounds(400, 250, 110, 40);
 
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel3.setText("SENHA:");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(120, 150, 51, 24);
 
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel4.setText("LOGIN:");
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(120, 120, 51, 24);
+        getContentPane().add(tfLogin);
+        tfLogin.setBounds(170, 120, 250, 24);
 
         tfNome.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tfNomeActionPerformed(evt);
             }
         });
+        getContentPane().add(tfNome);
+        tfNome.setBounds(170, 80, 250, 24);
+        getContentPane().add(tfSenha);
+        tfSenha.setBounds(170, 150, 250, 22);
 
-        SalvarUsuario.setText("SALVAR");
+        SalvarUsuario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/SALVAR_2.png"))); // NOI18N
+        SalvarUsuario.setBorderPainted(false);
+        SalvarUsuario.setContentAreaFilled(false);
         SalvarUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SalvarUsuarioActionPerformed(evt);
             }
         });
+        getContentPane().add(SalvarUsuario);
+        SalvarUsuario.setBounds(150, 250, 120, 40);
 
-        Voltar.setText("VOLTAR");
+        Voltar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/x.png"))); // NOI18N
+        Voltar.setBorderPainted(false);
+        Voltar.setContentAreaFilled(false);
         Voltar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 VoltarActionPerformed(evt);
             }
         });
+        getContentPane().add(Voltar);
+        Voltar.setBounds(500, 10, 33, 29);
 
+        cargo.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         cargo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Administrador", "Funcionario" }));
+        getContentPane().add(cargo);
+        cargo.setBounds(170, 180, 114, 23);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(tfNome))
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(tfLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(cargo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(tfSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(Voltar)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(Limpar)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(SalvarUsuario)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(Pesquisar)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Excluir)
-                .addContainerGap(44, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(56, 56, 56)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(30, 30, 30)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(tfNome, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(tfLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(tfSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(cargo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(SalvarUsuario)
-                    .addComponent(Voltar)
-                    .addComponent(Limpar)
-                    .addComponent(Pesquisar)
-                    .addComponent(Excluir))
-                .addGap(37, 37, 37))
-        );
+        transparencia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/transparente.png"))); // NOI18N
+        getContentPane().add(transparencia);
+        transparencia.setBounds(30, 30, 500, 310);
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/tela usuario.png"))); // NOI18N
+        jLabel5.setText("jLabel5");
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(0, 0, 540, 350);
 
         pack();
         setLocationRelativeTo(null);
@@ -234,9 +226,7 @@ public class CadastrarUsuario extends javax.swing.JDialog {
     }//GEN-LAST:event_SalvarUsuarioActionPerformed
 
     private void VoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VoltarActionPerformed
-        EscolhaDeAcao escolhaDeAcao = new EscolhaDeAcao();
-        escolhaDeAcao.setVisible(true);
-        dispose();
+        System.exit(0);
     }//GEN-LAST:event_VoltarActionPerformed
 
     /**
@@ -293,8 +283,10 @@ public class CadastrarUsuario extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JTextField tfLogin;
     private javax.swing.JTextField tfNome;
     private javax.swing.JPasswordField tfSenha;
+    private javax.swing.JLabel transparencia;
     // End of variables declaration//GEN-END:variables
 }
