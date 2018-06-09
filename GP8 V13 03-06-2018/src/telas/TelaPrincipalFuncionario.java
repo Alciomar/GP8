@@ -31,6 +31,7 @@ public class TelaPrincipalFuncionario extends javax.swing.JFrame {
         Resultados1 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         CorrigirGabarito = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -65,6 +66,15 @@ public class TelaPrincipalFuncionario extends javax.swing.JFrame {
         });
         jPanel2.add(CorrigirGabarito);
         CorrigirGabarito.setBounds(120, 330, 150, 60);
+
+        jButton2.setText("CADASTRAR ALUNO");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton2);
+        jButton2.setBounds(110, 140, 170, 70);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/tela fvs principal.png"))); // NOI18N
         jPanel2.add(jLabel1);
@@ -106,6 +116,13 @@ public class TelaPrincipalFuncionario extends javax.swing.JFrame {
         corrigirGabarito.setVisible(true);
     }//GEN-LAST:event_CorrigirGabaritoActionPerformed
 
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+
+        CadastrarAluno aluno = new CadastrarAluno(this, rootPaneCheckingEnabled);
+        aluno.setVisible(true);
+
+    }//GEN-LAST:event_jButton2ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -146,6 +163,7 @@ public class TelaPrincipalFuncionario extends javax.swing.JFrame {
     private javax.swing.JButton CorrigirGabarito;
     private javax.swing.JButton Resultados1;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables

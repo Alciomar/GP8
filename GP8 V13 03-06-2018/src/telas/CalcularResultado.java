@@ -294,7 +294,10 @@ public class CalcularResultado extends javax.swing.JDialog {
 
             for (CorrigirGabarito corrigir : corrigir1) {
 
-                if (corrigir.getQtdAcertosRedacao() > 0 && corrigir.getAluno().getPrimeiraOpcaoDeCurso().contains("Administração")) {
+                if (corrigir.getQtdAcertosRedacao() > 0
+                        && corrigir.getAluno().getPrimeiraOpcaoDeCurso()
+                                .contains("Administração")) {
+                    
                     PdfPCell cel2 = new PdfPCell(new Paragraph("Administração"));
 
                     tabela.addCell(cel2);
