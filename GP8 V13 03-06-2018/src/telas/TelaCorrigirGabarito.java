@@ -208,7 +208,6 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
         qt44 = new javax.swing.JTextField();
         SalvarGabarito = new javax.swing.JButton();
         LimparCampos = new javax.swing.JButton();
-        Voltar = new javax.swing.JButton();
         jLabel46 = new javax.swing.JLabel();
         tfNomeAluno = new javax.swing.JTextField();
         jLabel48 = new javax.swing.JLabel();
@@ -220,18 +219,20 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
         PesquisarGabarito = new javax.swing.JButton();
         jLabel49 = new javax.swing.JLabel();
         NotaDaRedacao = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
         jLabel51 = new javax.swing.JLabel();
         jLabel50 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setMinimumSize(new java.awt.Dimension(989, 779));
+        setMinimumSize(new java.awt.Dimension(987, 738));
         setUndecorated(true);
+        setPreferredSize(new java.awt.Dimension(987, 738));
         getContentPane().setLayout(null);
 
         jLabel15.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel15.setText("15º");
         getContentPane().add(jLabel15);
-        jLabel15.setBounds(390, 220, 34, 33);
+        jLabel15.setBounds(380, 200, 34, 33);
 
         qt15.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -239,7 +240,7 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt15);
-        qt15.setBounds(430, 220, 44, 33);
+        qt15.setBounds(420, 200, 44, 33);
 
         qt18.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -247,12 +248,12 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt18);
-        qt18.setBounds(830, 220, 44, 33);
+        qt18.setBounds(820, 200, 44, 33);
 
         jLabel24.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel24.setText("17º");
         getContentPane().add(jLabel24);
-        jLabel24.setBounds(650, 220, 34, 33);
+        jLabel24.setBounds(640, 200, 34, 33);
 
         qt17.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -260,13 +261,13 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt17);
-        qt17.setBounds(690, 220, 44, 33);
+        qt17.setBounds(680, 200, 44, 33);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("1º");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(130, 110, 34, 33);
+        jLabel1.setBounds(120, 90, 34, 33);
 
         qt01.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
@@ -285,13 +286,13 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt01);
-        qt01.setBounds(170, 110, 44, 33);
+        qt01.setBounds(160, 90, 44, 33);
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("4º");
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(530, 110, 34, 33);
+        jLabel6.setBounds(520, 90, 34, 33);
 
         qt04.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -299,13 +300,13 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt04);
-        qt04.setBounds(570, 110, 44, 33);
+        qt04.setBounds(560, 90, 44, 33);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("7º");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(130, 170, 34, 33);
+        jLabel2.setBounds(120, 150, 34, 33);
 
         qt07.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -313,13 +314,13 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt07);
-        qt07.setBounds(170, 170, 44, 33);
+        qt07.setBounds(160, 150, 44, 33);
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel9.setText("10º");
         getContentPane().add(jLabel9);
-        jLabel9.setBounds(530, 170, 34, 33);
+        jLabel9.setBounds(520, 150, 34, 33);
 
         qt10.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -327,13 +328,13 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt10);
-        qt10.setBounds(570, 170, 44, 33);
+        qt10.setBounds(560, 150, 44, 33);
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("2º");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(250, 110, 34, 33);
+        jLabel4.setBounds(240, 90, 34, 33);
 
         qt02.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -346,13 +347,13 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt02);
-        qt02.setBounds(290, 110, 44, 33);
+        qt02.setBounds(280, 90, 44, 33);
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel7.setText("5º");
         getContentPane().add(jLabel7);
-        jLabel7.setBounds(650, 110, 34, 33);
+        jLabel7.setBounds(640, 90, 34, 33);
 
         qt05.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -360,13 +361,13 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt05);
-        qt05.setBounds(690, 110, 44, 33);
+        qt05.setBounds(680, 90, 44, 33);
 
         jLabel12.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel12.setText("8º");
         getContentPane().add(jLabel12);
-        jLabel12.setBounds(250, 170, 34, 33);
+        jLabel12.setBounds(240, 150, 34, 33);
 
         qt08.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -374,13 +375,13 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt08);
-        qt08.setBounds(290, 170, 44, 33);
+        qt08.setBounds(280, 150, 44, 33);
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel10.setText("11º");
         getContentPane().add(jLabel10);
-        jLabel10.setBounds(650, 170, 34, 33);
+        jLabel10.setBounds(640, 150, 34, 33);
 
         qt11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -393,12 +394,12 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt11);
-        qt11.setBounds(690, 170, 44, 33);
+        qt11.setBounds(680, 150, 44, 33);
 
         jLabel14.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel14.setText("13º");
         getContentPane().add(jLabel14);
-        jLabel14.setBounds(130, 220, 34, 33);
+        jLabel14.setBounds(120, 200, 34, 33);
 
         qt13.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -406,13 +407,13 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt13);
-        qt13.setBounds(170, 220, 44, 33);
+        qt13.setBounds(160, 200, 44, 33);
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("3º");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(390, 110, 34, 33);
+        jLabel3.setBounds(380, 90, 34, 33);
 
         qt03.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -420,17 +421,17 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt03);
-        qt03.setBounds(430, 110, 44, 33);
+        qt03.setBounds(420, 90, 44, 33);
 
         jLabel13.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel13.setText("14º");
         getContentPane().add(jLabel13);
-        jLabel13.setBounds(250, 220, 34, 33);
+        jLabel13.setBounds(240, 200, 34, 33);
 
         jLabel23.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel23.setText("18º");
         getContentPane().add(jLabel23);
-        jLabel23.setBounds(790, 220, 34, 33);
+        jLabel23.setBounds(780, 200, 34, 33);
 
         qt14.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -438,12 +439,12 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt14);
-        qt14.setBounds(290, 220, 44, 33);
+        qt14.setBounds(280, 200, 44, 33);
 
         jLabel30.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel30.setText("16º");
         getContentPane().add(jLabel30);
-        jLabel30.setBounds(530, 220, 34, 33);
+        jLabel30.setBounds(520, 200, 34, 33);
 
         qt16.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -451,7 +452,7 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt16);
-        qt16.setBounds(570, 220, 44, 33);
+        qt16.setBounds(560, 200, 44, 33);
 
         qt12.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -459,13 +460,13 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt12);
-        qt12.setBounds(830, 170, 44, 33);
+        qt12.setBounds(820, 150, 44, 33);
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel8.setText("12º");
         getContentPane().add(jLabel8);
-        jLabel8.setBounds(790, 170, 34, 33);
+        jLabel8.setBounds(780, 150, 34, 33);
 
         qt06.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -473,7 +474,7 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt06);
-        qt06.setBounds(830, 110, 44, 33);
+        qt06.setBounds(820, 90, 44, 33);
 
         qt09.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -481,24 +482,24 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt09);
-        qt09.setBounds(430, 170, 44, 33);
+        qt09.setBounds(420, 150, 44, 33);
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("6º");
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(790, 110, 34, 33);
+        jLabel5.setBounds(780, 90, 34, 33);
 
         jLabel11.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel11.setText("9º");
         getContentPane().add(jLabel11);
-        jLabel11.setBounds(390, 170, 34, 33);
+        jLabel11.setBounds(380, 150, 34, 33);
 
         jLabel29.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel29.setText("20º");
         getContentPane().add(jLabel29);
-        jLabel29.setBounds(250, 280, 34, 33);
+        jLabel29.setBounds(240, 260, 34, 33);
 
         qt20.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -506,12 +507,12 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt20);
-        qt20.setBounds(290, 280, 44, 33);
+        qt20.setBounds(280, 260, 44, 33);
 
         jLabel28.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel28.setText("19º");
         getContentPane().add(jLabel28);
-        jLabel28.setBounds(130, 280, 34, 33);
+        jLabel28.setBounds(120, 260, 34, 33);
 
         qt21.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -519,7 +520,7 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt21);
-        qt21.setBounds(430, 280, 44, 33);
+        qt21.setBounds(420, 260, 44, 33);
 
         qt19.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -527,17 +528,17 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt19);
-        qt19.setBounds(170, 280, 44, 33);
+        qt19.setBounds(160, 260, 44, 33);
 
         jLabel27.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel27.setText("21º");
         getContentPane().add(jLabel27);
-        jLabel27.setBounds(390, 280, 34, 33);
+        jLabel27.setBounds(380, 260, 34, 33);
 
         jLabel40.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel40.setText("34º");
         getContentPane().add(jLabel40);
-        jLabel40.setBounds(530, 390, 34, 33);
+        jLabel40.setBounds(520, 360, 34, 33);
 
         qt33.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -545,7 +546,7 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt33);
-        qt33.setBounds(430, 390, 44, 33);
+        qt33.setBounds(420, 360, 44, 33);
 
         qt34.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -553,17 +554,17 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt34);
-        qt34.setBounds(570, 390, 44, 33);
+        qt34.setBounds(560, 360, 44, 33);
 
         jLabel35.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel35.setText("33º");
         getContentPane().add(jLabel35);
-        jLabel35.setBounds(390, 390, 34, 33);
+        jLabel35.setBounds(380, 360, 34, 33);
 
         jLabel32.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel32.setText("37º");
         getContentPane().add(jLabel32);
-        jLabel32.setBounds(130, 440, 34, 33);
+        jLabel32.setBounds(120, 410, 34, 33);
 
         qt37.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -571,12 +572,12 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt37);
-        qt37.setBounds(170, 440, 44, 33);
+        qt37.setBounds(160, 410, 44, 33);
 
         jLabel44.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel44.setText("40º");
         getContentPane().add(jLabel44);
-        jLabel44.setBounds(530, 440, 34, 33);
+        jLabel44.setBounds(520, 410, 34, 33);
 
         qt40.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -589,12 +590,12 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt40);
-        qt40.setBounds(570, 440, 44, 33);
+        qt40.setBounds(560, 410, 44, 33);
 
         jLabel16.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel16.setText("27º");
         getContentPane().add(jLabel16);
-        jLabel16.setBounds(390, 340, 34, 33);
+        jLabel16.setBounds(380, 310, 34, 33);
 
         qt36.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -602,7 +603,7 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt36);
-        qt36.setBounds(830, 390, 44, 33);
+        qt36.setBounds(820, 360, 44, 33);
 
         qt24.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -610,22 +611,22 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt24);
-        qt24.setBounds(830, 280, 44, 33);
+        qt24.setBounds(820, 260, 44, 33);
 
         jLabel19.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel19.setText("24º");
         getContentPane().add(jLabel19);
-        jLabel19.setBounds(790, 280, 34, 33);
+        jLabel19.setBounds(780, 260, 34, 33);
 
         jLabel39.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel39.setText("36º");
         getContentPane().add(jLabel39);
-        jLabel39.setBounds(790, 390, 34, 33);
+        jLabel39.setBounds(780, 360, 34, 33);
 
         jLabel22.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel22.setText("23º");
         getContentPane().add(jLabel22);
-        jLabel22.setBounds(650, 280, 34, 33);
+        jLabel22.setBounds(640, 260, 34, 33);
 
         qt23.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -633,12 +634,12 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt23);
-        qt23.setBounds(690, 280, 44, 33);
+        qt23.setBounds(680, 260, 44, 33);
 
         jLabel18.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel18.setText("26º");
         getContentPane().add(jLabel18);
-        jLabel18.setBounds(250, 340, 34, 33);
+        jLabel18.setBounds(240, 310, 34, 33);
 
         qt26.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -646,12 +647,12 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt26);
-        qt26.setBounds(290, 340, 44, 33);
+        qt26.setBounds(280, 310, 44, 33);
 
         jLabel21.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel21.setText("29º");
         getContentPane().add(jLabel21);
-        jLabel21.setBounds(650, 340, 34, 33);
+        jLabel21.setBounds(640, 310, 34, 33);
 
         qt29.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -659,12 +660,12 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt29);
-        qt29.setBounds(690, 340, 44, 33);
+        qt29.setBounds(680, 310, 44, 33);
 
         jLabel36.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel36.setText("32º");
         getContentPane().add(jLabel36);
-        jLabel36.setBounds(250, 390, 34, 33);
+        jLabel36.setBounds(240, 360, 34, 33);
 
         qt32.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -672,12 +673,12 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt32);
-        qt32.setBounds(290, 390, 44, 33);
+        qt32.setBounds(280, 360, 44, 33);
 
         jLabel41.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel41.setText("35º");
         getContentPane().add(jLabel41);
-        jLabel41.setBounds(650, 390, 34, 33);
+        jLabel41.setBounds(640, 360, 34, 33);
 
         qt35.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -685,12 +686,12 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt35);
-        qt35.setBounds(690, 390, 44, 33);
+        qt35.setBounds(680, 360, 44, 33);
 
         jLabel34.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel34.setText("38º");
         getContentPane().add(jLabel34);
-        jLabel34.setBounds(250, 440, 34, 33);
+        jLabel34.setBounds(240, 410, 34, 33);
 
         qt38.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -698,12 +699,12 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt38);
-        qt38.setBounds(290, 440, 44, 33);
+        qt38.setBounds(280, 410, 44, 33);
 
         jLabel45.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel45.setText("41º");
         getContentPane().add(jLabel45);
-        jLabel45.setBounds(650, 440, 34, 33);
+        jLabel45.setBounds(640, 410, 34, 33);
 
         qt41.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -711,7 +712,7 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt41);
-        qt41.setBounds(690, 440, 44, 33);
+        qt41.setBounds(680, 410, 44, 33);
 
         qt39.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -724,12 +725,12 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt39);
-        qt39.setBounds(430, 440, 44, 33);
+        qt39.setBounds(420, 410, 44, 33);
 
         jLabel26.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel26.setText("30º");
         getContentPane().add(jLabel26);
-        jLabel26.setBounds(790, 340, 34, 33);
+        jLabel26.setBounds(780, 310, 34, 33);
 
         qt30.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -737,7 +738,7 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt30);
-        qt30.setBounds(830, 340, 44, 33);
+        qt30.setBounds(820, 310, 44, 33);
 
         qt22.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -745,17 +746,17 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt22);
-        qt22.setBounds(570, 280, 44, 33);
+        qt22.setBounds(560, 260, 44, 33);
 
         jLabel20.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel20.setText("22º");
         getContentPane().add(jLabel20);
-        jLabel20.setBounds(530, 280, 34, 33);
+        jLabel20.setBounds(520, 260, 34, 33);
 
         jLabel17.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel17.setText("25º");
         getContentPane().add(jLabel17);
-        jLabel17.setBounds(130, 340, 34, 33);
+        jLabel17.setBounds(120, 310, 34, 33);
 
         qt25.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -763,12 +764,12 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt25);
-        qt25.setBounds(170, 340, 44, 33);
+        qt25.setBounds(160, 310, 44, 33);
 
         jLabel25.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel25.setText("28º");
         getContentPane().add(jLabel25);
-        jLabel25.setBounds(530, 340, 34, 33);
+        jLabel25.setBounds(520, 310, 34, 33);
 
         qt28.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -776,7 +777,7 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt28);
-        qt28.setBounds(570, 340, 44, 33);
+        qt28.setBounds(560, 310, 44, 33);
 
         qt27.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -784,17 +785,17 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt27);
-        qt27.setBounds(430, 340, 44, 33);
+        qt27.setBounds(420, 310, 44, 33);
 
         jLabel42.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel42.setText("31º");
         getContentPane().add(jLabel42);
-        jLabel42.setBounds(130, 390, 34, 33);
+        jLabel42.setBounds(120, 360, 34, 33);
 
         jLabel31.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel31.setText("39º");
         getContentPane().add(jLabel31);
-        jLabel31.setBounds(390, 440, 34, 33);
+        jLabel31.setBounds(380, 410, 34, 33);
 
         qt31.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -802,12 +803,12 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt31);
-        qt31.setBounds(170, 390, 44, 33);
+        qt31.setBounds(160, 360, 44, 33);
 
         jLabel38.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel38.setText("45º");
         getContentPane().add(jLabel38);
-        jLabel38.setBounds(390, 490, 34, 33);
+        jLabel38.setBounds(380, 460, 34, 33);
 
         qt45.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -815,7 +816,7 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt45);
-        qt45.setBounds(430, 490, 44, 33);
+        qt45.setBounds(420, 460, 44, 33);
 
         qt42.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -823,17 +824,17 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt42);
-        qt42.setBounds(830, 440, 44, 33);
+        qt42.setBounds(820, 410, 44, 33);
 
         jLabel43.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel43.setText("42º");
         getContentPane().add(jLabel43);
-        jLabel43.setBounds(790, 440, 34, 33);
+        jLabel43.setBounds(780, 410, 34, 33);
 
         jLabel37.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel37.setText("43º");
         getContentPane().add(jLabel37);
-        jLabel37.setBounds(130, 490, 34, 33);
+        jLabel37.setBounds(120, 460, 34, 33);
 
         qt43.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -841,12 +842,12 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt43);
-        qt43.setBounds(170, 490, 44, 33);
+        qt43.setBounds(160, 460, 44, 33);
 
         jLabel33.setFont(new java.awt.Font("Tahoma", 1, 15)); // NOI18N
         jLabel33.setText("44º");
         getContentPane().add(jLabel33);
-        jLabel33.setBounds(250, 490, 34, 33);
+        jLabel33.setBounds(240, 460, 34, 33);
 
         qt44.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -854,7 +855,7 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(qt44);
-        qt44.setBounds(290, 490, 44, 33);
+        qt44.setBounds(280, 460, 44, 33);
 
         SalvarGabarito.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/SALVAR_1.png"))); // NOI18N
         SalvarGabarito.setBorderPainted(false);
@@ -865,7 +866,7 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(SalvarGabarito);
-        SalvarGabarito.setBounds(790, 590, 100, 50);
+        SalvarGabarito.setBounds(780, 620, 100, 50);
 
         LimparCampos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/limpar.png"))); // NOI18N
         LimparCampos.setBorderPainted(false);
@@ -876,24 +877,12 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(LimparCampos);
-        LimparCampos.setBounds(680, 590, 100, 50);
-
-        Voltar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/voltar.png"))); // NOI18N
-        Voltar.setToolTipText("");
-        Voltar.setBorderPainted(false);
-        Voltar.setContentAreaFilled(false);
-        Voltar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                VoltarActionPerformed(evt);
-            }
-        });
-        getContentPane().add(Voltar);
-        Voltar.setBounds(570, 590, 100, 50);
+        LimparCampos.setBounds(130, 620, 100, 50);
 
         jLabel46.setFont(new java.awt.Font("Arial Black", 1, 11)); // NOI18N
         jLabel46.setText("NOME ALUNO");
         getContentPane().add(jLabel46);
-        jLabel46.setBounds(130, 560, 160, 26);
+        jLabel46.setBounds(130, 510, 160, 26);
 
         tfNomeAluno.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         tfNomeAluno.setEnabled(false);
@@ -908,7 +897,7 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(tfNomeAluno);
-        tfNomeAluno.setBounds(130, 590, 274, 34);
+        tfNomeAluno.setBounds(130, 540, 274, 34);
 
         jLabel48.setFont(new java.awt.Font("Geometr415 Blk BT", 1, 36)); // NOI18N
         jLabel48.setText("CORRIGIR GABARITO");
@@ -924,7 +913,7 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(PesquisarAluno);
-        PesquisarAluno.setBounds(410, 590, 70, 39);
+        PesquisarAluno.setBounds(410, 540, 70, 39);
 
         Excluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/EXCLUIR.png"))); // NOI18N
         Excluir.setBorderPainted(false);
@@ -935,7 +924,7 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(Excluir);
-        Excluir.setBounds(730, 660, 100, 50);
+        Excluir.setBounds(330, 620, 100, 50);
 
         tfProcessoSeletivo.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         tfProcessoSeletivo.setEnabled(false);
@@ -950,12 +939,12 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(tfProcessoSeletivo);
-        tfProcessoSeletivo.setBounds(130, 670, 274, 34);
+        tfProcessoSeletivo.setBounds(530, 540, 274, 34);
 
         jLabel47.setFont(new java.awt.Font("Arial Black", 1, 11)); // NOI18N
         jLabel47.setText("PROCESSO SELETIVO");
         getContentPane().add(jLabel47);
-        jLabel47.setBounds(130, 630, 160, 26);
+        jLabel47.setBounds(530, 510, 160, 26);
 
         PesquisarProcessoSeletivo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/PESQUISAR.png"))); // NOI18N
         PesquisarProcessoSeletivo.setBorderPainted(false);
@@ -966,7 +955,7 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(PesquisarProcessoSeletivo);
-        PesquisarProcessoSeletivo.setBounds(410, 670, 70, 39);
+        PesquisarProcessoSeletivo.setBounds(810, 540, 70, 39);
 
         PesquisarGabarito.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/PESQUISAR2.png"))); // NOI18N
         PesquisarGabarito.setBorderPainted(false);
@@ -977,12 +966,12 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(PesquisarGabarito);
-        PesquisarGabarito.setBounds(620, 660, 100, 50);
+        PesquisarGabarito.setBounds(560, 620, 100, 50);
 
         jLabel49.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel49.setText("NOTA DA REDAÇÃO");
         getContentPane().add(jLabel49);
-        jLabel49.setBounds(497, 490, 110, 34);
+        jLabel49.setBounds(490, 460, 110, 34);
 
         NotaDaRedacao.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -990,11 +979,22 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(NotaDaRedacao);
-        NotaDaRedacao.setBounds(610, 490, 83, 34);
+        NotaDaRedacao.setBounds(600, 460, 83, 34);
+
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/x.png"))); // NOI18N
+        jButton1.setBorderPainted(false);
+        jButton1.setContentAreaFilled(false);
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1);
+        jButton1.setBounds(940, 10, 51, 40);
 
         jLabel51.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/TRANPARENTE CONTORNO.png"))); // NOI18N
         getContentPane().add(jLabel51);
-        jLabel51.setBounds(100, 90, 840, 630);
+        jLabel51.setBounds(100, 60, 840, 630);
 
         jLabel50.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/tela gabarito_1.png"))); // NOI18N
         getContentPane().add(jLabel50);
@@ -1640,13 +1640,6 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
         limparCampos();
     }//GEN-LAST:event_LimparCamposActionPerformed
 
-    private void VoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VoltarActionPerformed
-
-        EscolhaDeAcao escolhaDeAcao = new EscolhaDeAcao();
-        escolhaDeAcao.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_VoltarActionPerformed
-
     private void tfNomeAlunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfNomeAlunoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_tfNomeAlunoActionPerformed
@@ -1722,6 +1715,10 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
         }
 
     }//GEN-LAST:event_NotaDaRedacaoKeyTyped
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     public void verificarCampos(int posicao, JTextField tf) {
 
@@ -1839,7 +1836,7 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
     private javax.swing.JButton PesquisarGabarito;
     private javax.swing.JButton PesquisarProcessoSeletivo;
     private javax.swing.JButton SalvarGabarito;
-    private javax.swing.JButton Voltar;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

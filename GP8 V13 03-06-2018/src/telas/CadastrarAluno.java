@@ -146,7 +146,7 @@ public class CadastrarAluno extends javax.swing.JDialog {
         jLabel2 = new javax.swing.JLabel();
         Arquivo = new javax.swing.JTextField();
         Email = new javax.swing.JTextField();
-        Voltar = new javax.swing.JButton();
+        fechar = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         Telefone = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
@@ -158,10 +158,13 @@ public class CadastrarAluno extends javax.swing.JDialog {
         SegundaOpcaoDeCurso = new javax.swing.JComboBox<>();
         PrimeiraOpcaoDeCurso = new javax.swing.JComboBox<>();
         Cpf = new javax.swing.JTextField();
+        jLabel9 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setMinimumSize(new java.awt.Dimension(622, 348));
+        setMinimumSize(new java.awt.Dimension(622, 353));
+        setUndecorated(true);
+        setPreferredSize(new java.awt.Dimension(622, 353));
         getContentPane().setLayout(null);
 
         CarregarArquivo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/CARREGARARQUIVO.png"))); // NOI18N
@@ -173,7 +176,7 @@ public class CadastrarAluno extends javax.swing.JDialog {
             }
         });
         getContentPane().add(CarregarArquivo);
-        CarregarArquivo.setBounds(480, 270, 110, 40);
+        CarregarArquivo.setBounds(470, 260, 110, 40);
 
         SalvarArquivo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/salvar arquivo_1.png"))); // NOI18N
         SalvarArquivo.setBorderPainted(false);
@@ -184,7 +187,7 @@ public class CadastrarAluno extends javax.swing.JDialog {
             }
         });
         getContentPane().add(SalvarArquivo);
-        SalvarArquivo.setBounds(480, 310, 110, 40);
+        SalvarArquivo.setBounds(470, 300, 110, 40);
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel6.setText("PRIMEIRA OPÇÃO DE CURSO");
@@ -194,9 +197,9 @@ public class CadastrarAluno extends javax.swing.JDialog {
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel1.setText("NOME.:");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(22, 38, 45, 22);
+        jLabel1.setBounds(40, 40, 45, 22);
         getContentPane().add(Nome);
-        Nome.setBounds(71, 33, 219, 32);
+        Nome.setBounds(80, 30, 219, 32);
 
         SalvarAluno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/salvar aluno.png"))); // NOI18N
         SalvarAluno.setBorderPainted(false);
@@ -212,45 +215,46 @@ public class CadastrarAluno extends javax.swing.JDialog {
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel2.setText("E-MAIL.:");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(22, 81, 46, 22);
+        jLabel2.setBounds(30, 80, 46, 22);
         getContentPane().add(Arquivo);
-        Arquivo.setBounds(210, 280, 247, 23);
+        Arquivo.setBounds(220, 270, 247, 23);
         getContentPane().add(Email);
-        Email.setBounds(71, 76, 219, 32);
+        Email.setBounds(80, 80, 219, 32);
 
-        Voltar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/voltar.png"))); // NOI18N
-        Voltar.setBorderPainted(false);
-        Voltar.setContentAreaFilled(false);
-        Voltar.addActionListener(new java.awt.event.ActionListener() {
+        fechar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/x.png"))); // NOI18N
+        fechar.setBorderPainted(false);
+        fechar.setContentAreaFilled(false);
+        fechar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                VoltarActionPerformed(evt);
+                fecharActionPerformed(evt);
             }
         });
-        getContentPane().add(Voltar);
-        Voltar.setBounds(30, 283, 120, 50);
+        getContentPane().add(fechar);
+        fechar.setBounds(560, 0, 80, 30);
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel3.setText("TEL.:");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(308, 38, 62, 22);
+        jLabel3.setBounds(340, 40, 62, 20);
         getContentPane().add(Telefone);
-        Telefone.setBounds(350, 40, 219, 32);
+        Telefone.setBounds(370, 30, 219, 32);
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel4.setText("CIDADE.:");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(308, 81, 62, 22);
+        jLabel4.setBounds(320, 90, 62, 20);
         getContentPane().add(Cidade);
-        Cidade.setBounds(360, 80, 219, 32);
+        Cidade.setBounds(370, 80, 219, 32);
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel5.setText("SEGUNDA OPÇÃO DE CURSO");
         getContentPane().add(jLabel5);
         jLabel5.setBounds(370, 160, 151, 22);
 
+        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel8.setText("CPF.:");
         getContentPane().add(jLabel8);
-        jLabel8.setBounds(104, 124, 50, 20);
+        jLabel8.setBounds(40, 130, 50, 20);
 
         Pesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/PESQUISAR_1.png"))); // NOI18N
         Pesquisar.setBorderPainted(false);
@@ -276,17 +280,21 @@ public class CadastrarAluno extends javax.swing.JDialog {
 
         SegundaOpcaoDeCurso.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Administração", "Analise de Sistemas ", "Ciências Contabeis ", "Direito", "Enfermagem", "Educação Física", "Fisioterapia", "Psicologia ", "Seviço Social" }));
         getContentPane().add(SegundaOpcaoDeCurso);
-        SegundaOpcaoDeCurso.setBounds(380, 180, 122, 34);
+        SegundaOpcaoDeCurso.setBounds(380, 180, 123, 34);
 
         PrimeiraOpcaoDeCurso.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Administração", "Analise de Sistemas ", "Ciências Contabeis ", "Direito", "Enfermagem", "Educação Física", "Fisioterapia", "Psicologia ", "Seviço Social" }));
         getContentPane().add(PrimeiraOpcaoDeCurso);
-        PrimeiraOpcaoDeCurso.setBounds(130, 180, 122, 34);
+        PrimeiraOpcaoDeCurso.setBounds(130, 180, 123, 34);
         getContentPane().add(Cpf);
-        Cpf.setBounds(140, 120, 170, 30);
+        Cpf.setBounds(70, 120, 170, 30);
+
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/transparente 3.png"))); // NOI18N
+        getContentPane().add(jLabel9);
+        jLabel9.setBounds(20, 20, 600, 330);
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/tela cadastrar aluno.png"))); // NOI18N
         getContentPane().add(jLabel7);
-        jLabel7.setBounds(0, 0, 630, 370);
+        jLabel7.setBounds(0, -10, 630, 370);
 
         pack();
         setLocationRelativeTo(null);
@@ -352,12 +360,10 @@ public class CadastrarAluno extends javax.swing.JDialog {
         }
     }//GEN-LAST:event_SalvarAlunoActionPerformed
 
-    private void VoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VoltarActionPerformed
+    private void fecharActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fecharActionPerformed
         
-        EscolhaDeAcao escolhaDeAcao = new EscolhaDeAcao();
-        escolhaDeAcao.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_VoltarActionPerformed
+       System.exit(0);
+    }//GEN-LAST:event_fecharActionPerformed
 
     private void PesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PesquisarActionPerformed
         List<Aluno> lista;
@@ -442,7 +448,7 @@ public class CadastrarAluno extends javax.swing.JDialog {
     private javax.swing.JButton SalvarArquivo;
     private javax.swing.JComboBox<String> SegundaOpcaoDeCurso;
     private javax.swing.JTextField Telefone;
-    private javax.swing.JButton Voltar;
+    private javax.swing.JButton fechar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -451,5 +457,6 @@ public class CadastrarAluno extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     // End of variables declaration//GEN-END:variables
 }
