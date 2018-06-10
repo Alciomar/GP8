@@ -280,11 +280,11 @@ public class CadastrarAluno extends javax.swing.JDialog {
 
         SegundaOpcaoDeCurso.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Administração", "Analise de Sistemas ", "Ciências Contabeis ", "Direito", "Enfermagem", "Educação Física", "Fisioterapia", "Psicologia ", "Seviço Social" }));
         getContentPane().add(SegundaOpcaoDeCurso);
-        SegundaOpcaoDeCurso.setBounds(380, 180, 123, 34);
+        SegundaOpcaoDeCurso.setBounds(380, 180, 122, 34);
 
         PrimeiraOpcaoDeCurso.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Administração", "Analise de Sistemas ", "Ciências Contabeis ", "Direito", "Enfermagem", "Educação Física", "Fisioterapia", "Psicologia ", "Seviço Social" }));
         getContentPane().add(PrimeiraOpcaoDeCurso);
-        PrimeiraOpcaoDeCurso.setBounds(130, 180, 123, 34);
+        PrimeiraOpcaoDeCurso.setBounds(130, 180, 122, 34);
         getContentPane().add(Cpf);
         Cpf.setBounds(70, 120, 170, 30);
 

@@ -902,7 +902,7 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
         jLabel48.setFont(new java.awt.Font("Geometr415 Blk BT", 1, 36)); // NOI18N
         jLabel48.setText("CORRIGIR GABARITO");
         getContentPane().add(jLabel48);
-        jLabel48.setBounds(330, 20, 400, 44);
+        jLabel48.setBounds(330, 20, 378, 47);
 
         PesquisarAluno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/PESQUISAR.png"))); // NOI18N
         PesquisarAluno.setBorderPainted(false);
@@ -990,7 +990,7 @@ public class TelaCorrigirGabarito extends javax.swing.JDialog {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(940, 10, 51, 40);
+        jButton1.setBounds(940, 10, 49, 40);
 
         jLabel51.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/TRANPARENTE CONTORNO.png"))); // NOI18N
         getContentPane().add(jLabel51);

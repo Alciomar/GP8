@@ -204,7 +204,11 @@ public class PesquisaGenerica extends javax.swing.JDialog {
     }//GEN-LAST:event_tfPesquisaKeyPressed
 
     private void btVoltar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btVoltar1ActionPerformed
-        System.exit(0);
+        EscolhaDeAcao ec = new EscolhaDeAcao();
+        TelaPrincipalFuncionario tpf = new TelaPrincipalFuncionario();
+        tpf.setVisible(true);
+        ec.setVisible(true);
+        dispose();
     }//GEN-LAST:event_btVoltar1ActionPerformed
 
     /**

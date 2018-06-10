@@ -77,7 +77,7 @@ public class CadastrarUsuario extends javax.swing.JDialog {
             }
         });
         getContentPane().add(Limpar);
-        Limpar.setBounds(30, 250, 120, 41);
+        Limpar.setBounds(30, 250, 120, 39);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel1.setText("CADASTRO DE USUARIO");
@@ -98,7 +98,7 @@ public class CadastrarUsuario extends javax.swing.JDialog {
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel2.setText("NOME:");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(120, 80, 51, 24);
+        jLabel2.setBounds(120, 90, 51, 24);
 
         Excluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/EXCLUIR_1.png"))); // NOI18N
         Excluir.setToolTipText("");
@@ -130,7 +130,7 @@ public class CadastrarUsuario extends javax.swing.JDialog {
             }
         });
         getContentPane().add(tfNome);
-        tfNome.setBounds(170, 80, 250, 24);
+        tfNome.setBounds(170, 90, 250, 24);
         getContentPane().add(tfSenha);
         tfSenha.setBounds(170, 150, 250, 22);
 
@@ -159,7 +159,7 @@ public class CadastrarUsuario extends javax.swing.JDialog {
         cargo.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         cargo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Administrador", "Funcionario" }));
         getContentPane().add(cargo);
-        cargo.setBounds(170, 180, 114, 23);
+        cargo.setBounds(170, 180, 113, 21);
 
         transparencia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/transparente.png"))); // NOI18N
         getContentPane().add(transparencia);

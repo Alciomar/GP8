@@ -914,7 +914,7 @@ public class CadastrarGabarito extends javax.swing.JDialog {
         jLabel48.setFont(new java.awt.Font("Geometr415 Blk BT", 1, 36)); // NOI18N
         jLabel48.setText("CADASTRAR GABARITO");
         getContentPane().add(jLabel48);
-        jLabel48.setBounds(310, 0, 439, 44);
+        jLabel48.setBounds(310, 0, 426, 47);
 
         jLabel49.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/TRANPARENTE CONTORNO.png"))); // NOI18N
         getContentPane().add(jLabel49);
